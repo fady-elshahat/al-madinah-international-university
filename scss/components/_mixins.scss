@@ -1,0 +1,94 @@
+@use "../custom" as *;
+
+@mixin absoluteCalc {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+@mixin flexCentar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+@mixin btnSecondary {
+     color: $font-white;
+     background-color: $font-secondary;
+     padding: 18px 24px;
+     font-size: 15px;
+     @include flexCentar;
+     font-weight: 400;
+}
+
+@mixin btnYallow {
+     padding: 5px 10px;
+     background-color: $font-primary;
+     color: $font-text;
+     border-radius: $border-radius-50;
+     font-size: 16px;
+     line-height: 40px;
+     font-weight: 500;
+}
+
+@mixin containerCounter {
+     position: relative;
+     counter-increment: counter;
+}
+
+@mixin counter {
+     content: "0"counter(counter);
+     position: absolute;
+     top: 0;
+     left: 0;
+     padding-right: 25px;
+     font-size: 20px;
+     font-weight: 400;
+     color: $font-black-50;
+}
+
+@mixin line {
+     content: '';
+     position: absolute;
+     bottom: calc((52.5px / 2) - 5px);
+     left: 5px;
+     width: 52.5px;
+     height: 1px;
+     background-color: $font-black-light;
+     transform: rotate(-40deg)
+}
+
+@mixin spanCounterAndLine {
+     display: inline-block;
+     width: 52.5px;
+     height: 49.5px;
+     position: relative;
+     margin-right: 15.5px;
+     font-size: 20px;
+}
+
+@mixin waterMark {
+     position: relative;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+     font-size: 70px;
+     text-align: center;
+     margin: 20px auto 20px auto;
+     z-index: 111;
+     color: $font-black-50;
+}
+
+@mixin wateMarkBefore {
+     content: "our services";
+     position: absolute;
+     font-weight: 700;
+     font-size: 160px;
+     text-transform: uppercase;
+     left: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+     width: 100%;
+     color: rgba($color: $font-black-light, $alpha: 0.1)
+}

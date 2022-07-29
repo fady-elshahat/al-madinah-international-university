@@ -1,0 +1,108 @@
+@use '../components/mixins' as *;
+
+#academics {
+  padding: 50px 0;
+
+  h2 {
+    @include waterMark;
+
+    &::before {
+      @include wateMarkBefore;
+      content: 'Academics'
+    }
+  }
+
+  .mySwiperAcademics {
+    .swiper-slide {
+      @include containerCounter;
+
+      .academics-card {
+        padding-left: 75px;
+        padding-top: 50px;
+        transition: 0.5s;
+        background-image: url('../../assets/img/academics/Mask\ Group\ 48-2.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        height: 350px;
+        position: relative;
+        box-shadow: $box-shadow;
+        padding-bottom: 40px;
+
+        &::before {
+          content: '';
+          background-image: linear-gradient(to right, #826A51 0%, #ED1A3B 100%);
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          height: 3px;
+          position: absolute;
+        }
+
+        img {
+          margin-bottom: 40px;
+        }
+
+        h5 {
+          width: 90%;
+        }
+
+
+
+        .academics-counter {
+          span {
+            @include spanCounterAndLine;
+            position: absolute;
+            left: 12px;
+
+            &::after {
+              @include line;
+            }
+
+            &::before {
+              @include counter;
+            }
+          }
+        }
+
+        .academics-card-link {
+          opacity: 0;
+          width: 100%;
+          padding-right: 10px;
+          transition: 0.5s;
+
+          a {
+            text-decoration: none;
+            color: $font-secondary;
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          i {
+            color: $font-secondary;
+          }
+        }
+
+        &:hover .academics-card-link {
+          opacity: 1;
+        }
+
+        &:hover {
+          background-image: url('../../assets/img/academics/Mask\ Group\ 48.svg');
+        }
+      }
+    }
+
+  }
+
+
+  .academics-button {
+    @include btnYallow;
+    padding: 5px 22px;
+    margin-top: 50px;
+
+    a {
+      text-decoration: none;
+      color: $font-text;
+    }
+  }
+}

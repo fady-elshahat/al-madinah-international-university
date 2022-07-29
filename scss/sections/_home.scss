@@ -1,0 +1,272 @@
+@use '../components/mixins' as *;
+
+#home {
+     height: 780px;
+
+     .mySwiperHome {
+          position: relative;
+          height: 100%;
+
+          .swiper-slide {
+               background-position: center center;
+               background-size: cover;
+          }
+
+          .content-swiper {
+               z-index: 22;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               width: 50%;
+               color: $font-white;
+
+               .titel-swiper {
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 70px;
+               }
+
+               .desc-swiper {
+                    font-size: 24px;
+                    line-height: 42px;
+               }
+
+               .form-select {
+                    padding-left: 50px;
+                    font-size: 16px;
+                    line-height: 42px;
+               }
+
+               .btn-submit {
+                    margin-left: 18px;
+
+                    i {
+                         padding-inline-end: 10px;
+                    }
+
+                    @include btnSecondary
+               }
+
+               &.two {
+                    .btn-Practical {
+                         button {
+                              border: $border-light;
+                              color: $font-white;
+                              border-radius: $border-radius-50;
+                              padding: 10px 25px;
+
+                              &:hover {
+                                   color: $font-text;
+                              }
+                         }
+                    }
+
+                    .desc-swiper {
+                         font-size: 32px;
+                         line-height: 42px;
+                         margin-bottom: 10px;
+                    }
+
+                    .desc {
+                         margin-top: 10px;
+
+                         i {
+                              color: $font-primary;
+                              padding-right: 14px;
+                              font-size: 18px;
+                         }
+                    }
+
+                    .btn-view {
+                         border-radius: $border-radius-50;
+                         padding: 15px 30px;
+                         color: $font-white;
+                         border-color: $font-primary;
+                         font-weight: 500;
+                         font-size: 15px;
+
+                         &:hover {
+                              color: $font-text;
+                              background-color: $font-primary;
+                              border-color: $font-primary;
+                         }
+                    }
+
+
+
+               }
+
+               .btn-join,
+               .btn-numbers {
+                    @include btnSecondary;
+                    border-radius: $border-radius-50;
+                    padding: 15px 30px;
+
+                    i {
+                         padding-left: 15px;
+                         color: $font-primary;
+                    }
+               }
+
+               &.three {
+                    width: 80%;
+
+                    .number {
+                         font-size: 42px;
+                         color: $font-primary;
+                         line-height: 24px;
+                    }
+
+                    .content {
+                         span {
+                              font-size: 26px;
+                              font-weight: 400;
+                         }
+
+                         p {
+                              font-size: 28px;
+                              font-weight: 600;
+                         }
+                    }
+               }
+          }
+
+          .swiper-button {
+               width: 45px;
+               height: 45px;
+               background-color: $font-white;
+               position: absolute;
+               z-index: 3;
+               border-radius: 100%;
+               color: $font-text;
+               @include flexCentar;
+
+               &.next {
+                    bottom: 10%;
+                    right: 30%;
+               }
+
+               &.swiper-button-disabled {
+                    color: #999;
+                    cursor: default;
+               }
+
+               &.prev {
+                    bottom: 10%;
+                    right: 36%;
+               }
+
+          }
+
+     }
+
+     #side-bar {
+          position: absolute;
+          z-index: 333;
+          width: 400px;
+          height: 100%;
+          background-color: $bg-sideBar;
+          top: 0;
+          right: 0;
+          padding: 48px 10px 48px 20px;
+          overflow: hidden;
+
+
+          .academic-side {
+               border-right: $border-light;
+               padding-right: 10px;
+               width: 75%;
+
+               .btn-acad {
+                    @include btnYallow;
+               }
+
+               .academic-list {
+                    margin-top: 40px;
+
+                    .item {
+                         .box {
+                              font-size: 15px;
+                              line-height: 30px;
+                              font-weight: 400;
+                              color: $font-white;
+                              position: relative;
+
+                              &::before {
+                                   content: "";
+                                   position: absolute;
+                                   width: 40%;
+                                   height: 1px;
+                                   background-color: rgba(233, 230, 230, 0.05);
+                                   bottom: 15px;
+                                   left: 0;
+                              }
+
+                              i {
+                                   padding: 0;
+                              }
+                         }
+
+                         cursor: pointer;
+                         margin-bottom: 20px;
+
+                         i {
+                              color: $font-primary;
+                              padding-inline-end: 10px;
+                         }
+
+                    }
+               }
+          }
+
+          .icons-side {
+               position: relative;
+               padding-inline: 10px 0;
+               width: 25%;
+
+               &::after {
+                    content: "Admissions";
+                    position: absolute;
+                    font-size: 80px;
+                    width: 20px;
+                    color: rgba(233, 230, 230, 0.05);
+                    transform: rotate(90deg) translate(200%, -5%);
+                    line-height: 40px;
+               }
+
+               .search {
+                    width: 45px;
+                    height: 45px;
+                    border: 1px solid $font-primary;
+                    @include flexCentar
+               }
+
+               .social-media {
+                    padding-block-end: 50px;
+
+                    &>div {
+                         width: 45px;
+                         height: 45px;
+                         @include flexCentar;
+                         margin-bottom: 12px;
+
+                         i {
+                              font-size: 20px;
+                         }
+                    }
+
+                    .youtube {
+                         color: #FF0000;
+                    }
+
+                    .twitter {
+                         color: #0090FF;
+                    }
+
+                    .facebook {
+                         color: #4458B6;
+                    }
+               }
+          }
+     }
+}

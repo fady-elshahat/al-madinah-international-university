@@ -1,0 +1,140 @@
+@use '../components/mixins' as *;
+
+
+.apply {
+  background-color: white;
+  z-index: 888888;
+  transform: translateY(-30px);
+  position: relative;
+  padding: 29px 0 35px 0;
+  border-radius: 25px 25px 0 0;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .contact {
+    background-color: $font-primary;
+    width: fit-content;
+    padding: 20px 40px;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 10px 10px 0 0;
+    transform: rotate(-90deg) translateX(35%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: bottom right;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    i {
+      margin-right: 25px;
+      transform: rotate(90deg);
+    }
+  }
+
+  h5 {
+    font-size: 32px;
+    margin-bottom: 44px;
+  }
+
+  .col-md-4 {
+    @include containerCounter;
+    height: 200px;
+  }
+
+  .apply-box {
+    width: fit-content;
+    padding: 25px 50px 25px 25px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    &:hover {
+      box-shadow: $box-shadow;
+      transform: scale(1.1);
+      .apply-now-button {
+        opacity: 1;
+      }
+      .apply-content::after {
+        display: none;
+      }
+      
+    }
+    .apply-now-button {
+      transition: 5s;
+    }
+
+    .num span{
+      @include spanCounterAndLine;
+
+      &::after {
+        @include line;
+      }
+      &::before {
+        @include counter;
+      }
+    }
+
+
+    .apply-content {
+      position: relative;
+      .apply-content-p {
+        margin-bottom: 30px;
+      }
+      &-p1 {
+        font-weight: 400;
+        font-size: 18px;
+        color: $font-black-50;
+      }
+
+      &-p2 {
+        font-weight: 400;
+        font-size: 23px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        bottom: 8px;
+        left: 0;
+        background-color: rgba($color: $font-text, $alpha: 0.1);
+      }
+    }
+    .applyNow{
+      &>button {
+        @include btnYallow;
+        border: none;
+        margin-inline-end: 50px;
+        margin-inline-end: 50px;
+        position: relative;
+        // display: none;
+        opacity: 0;
+        transition: 1s;
+        a {
+          text-decoration: none;
+          color: $font-text;
+          padding: 7px 40px;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          bottom: 50%;
+          right: -40px;
+          background-color: rgba($color: $font-text, $alpha: 0.1);
+        }
+      }
+    } 
+  }
+  .apply-row-2 {
+    margin-top: 50px;
+  }
+
+}
+.apply-now-button {
+  transition: 2s all;
+}

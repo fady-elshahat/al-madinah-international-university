@@ -1,0 +1,21 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+// Global
+@import "custom";
+
+
+// Section
+@import 'sections/navbar';
+@import 'sections/home';
+@import 'sections/footer';
+@import 'sections/apply';
+@import 'sections/services';
+@import 'sections/academics';
+@import 'sections/mediu-center';
+
+body {
+     font-family: 'Poppins', sans-serif;
+     color: $font-text;
+}
