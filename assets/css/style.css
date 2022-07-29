@@ -664,7 +664,7 @@ progress {
 }
 @media (min-width: 1500px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1750px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -11423,7 +11423,7 @@ progress {
 }
 @media (min-width: 1500px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1750px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -22205,7 +22205,7 @@ progress {
 }
 @media (min-width: 1500px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1750px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -32603,7 +32603,7 @@ textarea.form-control-lg {
   }
 }
 #home {
-  height: 780px;
+  height: 840px;
 }
 #home .mySwiperHome {
   position: relative;
@@ -32759,7 +32759,7 @@ textarea.form-control-lg {
   width: 75%;
 }
 #home #side-bar .academic-side .btn-acad {
-  padding: 5px 10px;
+  padding: 0px 10px;
   background-color: #FFDD00;
   color: #000000;
   border-radius: 50px;
@@ -32793,8 +32793,7 @@ textarea.form-control-lg {
 #home #side-bar .academic-side .academic-list .item .box i {
   padding: 0;
 }
-#home #side-bar .academic-side .academic-list .item i {
-  color: #FFDD00;
+#home #side-bar .academic-side .academic-list .item img {
   padding-inline-end: 10px;
 }
 #home #side-bar .icons-side {
@@ -33509,7 +33508,7 @@ progress {
 }
 @media (min-width: 1500px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1750px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -44633,7 +44632,7 @@ progress {
 }
 @media (min-width: 1500px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1750px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -55142,7 +55141,7 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.1);
 }
 .apply .apply-box .applyNow > button {
-  padding: 5px 10px;
+  padding: 0px 10px;
   background-color: #FFDD00;
   color: #000000;
   border-radius: 50px;
@@ -55844,7 +55843,7 @@ progress {
 }
 @media (min-width: 1500px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1750px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -67142,7 +67141,7 @@ progress {
 }
 @media (min-width: 1500px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1750px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -77649,7 +77648,7 @@ textarea.form-control-lg {
   background-image: url("../../assets/img/academics/Mask Group 48.svg");
 }
 #academics .academics-button {
-  padding: 5px 10px;
+  padding: 0px 10px;
   background-color: #FFDD00;
   color: #000000;
   border-radius: 50px;
@@ -78330,7 +78329,7 @@ progress {
 }
 @media (min-width: 1500px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1750px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -88836,7 +88835,7 @@ textarea.form-control-lg {
   margin-inline-start: 15px;
 }
 #mediu-center .mySwiperMEDIU .btn-more {
-  padding: 5px 10px;
+  padding: 0px 10px;
   background-color: #FFDD00;
   color: #000000;
   border-radius: 50px;

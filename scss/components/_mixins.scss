@@ -23,7 +23,7 @@
 }
 
 @mixin btnYallow {
-     padding: 5px 10px;
+     padding: 0px 10px;
      background-color: $font-primary;
      color: $font-text;
      border-radius: $border-radius-50;
@@ -38,7 +38,7 @@
 }
 
 @mixin counter {
-     content: "0"counter(counter);
+     content: "0" counter(counter);
      position: absolute;
      top: 0;
      left: 0;
