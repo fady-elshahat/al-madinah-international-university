@@ -65,25 +65,33 @@
         }
 
         .academics-card-link {
-          opacity: 0;
           width: 100%;
           padding-right: 10px;
-          transition: 0.5s;
 
           a {
             text-decoration: none;
             color: $font-secondary;
             font-size: 16px;
             font-weight: 500;
+            opacity: 0;
+            transition: 0.5s;
+          }
+
+          i {
+            color: $font-text;
+            padding-inline-end: 30px;
+          }
+
+        }
+
+        &:hover .academics-card-link {
+          a {
+            opacity: 1;
           }
 
           i {
             color: $font-secondary;
           }
-        }
-
-        &:hover .academics-card-link {
-          opacity: 1;
         }
 
         &:hover {
@@ -94,6 +102,39 @@
 
   }
 
+  .btns {
+    position: absolute;
+    right: 40px;
+    top: -75px;
+    z-index: 333;
+
+    .swiper-button {
+      width: 45px;
+      height: 45px;
+      background-color: $font-white;
+      z-index: 3;
+      border-radius: 100%;
+      @include flexCentar;
+      color: $font-white;
+
+      &.next {
+        background-color: $font-secondary;
+        border-radius: 50%;
+      }
+
+      &.prev {
+        background-color: $font-secondary;
+        border-radius: 50%;
+        margin-right: 30px;
+      }
+
+      &.swiper-button-disabled {
+        border: 1px solid #999;
+        color: #999;
+        background-color: $font-white;
+      }
+    }
+  }
 
   .academics-button {
     @include btnYallow;

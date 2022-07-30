@@ -8,8 +8,7 @@
           height: 100%;
 
           .swiper-slide {
-               background-position: center center;
-               background-size: cover;
+               background-position: top left;
           }
 
           .content-swiper {
@@ -142,7 +141,7 @@
                @include flexCentar;
 
                &.next {
-                    bottom: 10%;
+                    bottom: 13%;
                     right: 30%;
                }
 
@@ -152,8 +151,8 @@
                }
 
                &.prev {
-                    bottom: 10%;
-                    right: 36%;
+                    bottom: 13%;
+                    right: 34%;
                }
 
           }
@@ -163,7 +162,7 @@
      #side-bar {
           position: absolute;
           z-index: 333;
-          width: 400px;
+          width: 420px;
           height: 100%;
           background-color: $bg-sideBar;
           top: 0;
@@ -185,6 +184,10 @@
                     margin-top: 40px;
 
                     .item {
+                         position: relative;
+                         cursor: pointer;
+                         margin-block: 20px;
+
                          .box {
                               font-size: 15px;
                               line-height: 30px;
@@ -197,7 +200,7 @@
                                    position: absolute;
                                    width: 40%;
                                    height: 1px;
-                                   background-color: rgba(233, 230, 230, 0.05);
+                                   background-color: rgba(233, 230, 230, 0.1);
                                    bottom: 15px;
                                    left: 0;
                               }
@@ -207,64 +210,70 @@
                               }
                          }
 
-                         cursor: pointer;
-                         margin-bottom: 20px;
+
 
                          img {
                               padding-inline-end: 10px;
                          }
 
+                         &::after {
+                              position: absolute;
+                              content: url('../../assets/img/section 1/icon/Component 22 – 1.svg');
+                              top: -43px;
+                              opacity: 0.3;
+                              left: -5px;
+                         }
                     }
                }
           }
+     }
 
-          .icons-side {
-               position: relative;
-               padding-inline: 10px 0;
-               width: 25%;
+     .icons-side {
+          position: relative;
+          padding-inline: 10px 0;
+          width: 25%;
 
-               &::after {
-                    content: "Admissions";
-                    position: absolute;
-                    font-size: 80px;
-                    width: 20px;
-                    color: rgba(233, 230, 230, 0.05);
-                    transform: rotate(90deg) translate(200%, -5%);
-                    line-height: 40px;
-               }
+          &::after {
+               content: "Admissions";
+               position: absolute;
+               font-size: 80px;
+               width: 20px;
+               color: rgba(233, 230, 230, 0.05);
+               transform: rotate(90deg) translate(200%, -5%);
+               line-height: 40px;
+          }
 
-               .search {
+          .search {
+               width: 45px;
+               height: 45px;
+               border: 1px solid $font-primary;
+               @include flexCentar
+          }
+
+          .social-media {
+               padding-block-end: 50px;
+
+               &>div {
                     width: 45px;
                     height: 45px;
-                    border: 1px solid $font-primary;
-                    @include flexCentar
+                    @include flexCentar;
+                    margin-bottom: 12px;
+
+                    i {
+                         font-size: 20px;
+                    }
                }
 
-               .social-media {
-                    padding-block-end: 50px;
+               .youtube {
+                    color: #FF0000;
+               }
 
-                    &>div {
-                         width: 45px;
-                         height: 45px;
-                         @include flexCentar;
-                         margin-bottom: 12px;
+               .twitter {
+                    color: #0090FF;
+               }
 
-                         i {
-                              font-size: 20px;
-                         }
-                    }
-
-                    .youtube {
-                         color: #FF0000;
-                    }
-
-                    .twitter {
-                         color: #0090FF;
-                    }
-
-                    .facebook {
-                         color: #4458B6;
-                    }
+               .facebook {
+                    color: #4458B6;
                }
           }
      }

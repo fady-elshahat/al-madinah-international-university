@@ -16,7 +16,7 @@
 
      .tabs {
           background-color: $font-primary;
-          padding: 50px 30px;
+          padding: 19px 5px;
 
           ul {
                .item {
@@ -106,21 +106,19 @@
 
      .mySwiperMEDIU {
           .swiper-slide {
-               width: 45%;
+               width: 40%;
 
                .desc {
                     font-size: 20px;
                     line-height: 36px;
                     font-weight: 500;
+                    width: 80%;
                     margin-top: 26px;
-                    margin-inline-start: 15px
                }
           }
 
           .btn-more {
                @include btnYallow;
-               padding: 5px 35px;
-               margin-inline-start: 15px;
 
                &:hover {
                     border-color: transparent;

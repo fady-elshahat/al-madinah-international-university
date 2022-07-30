@@ -35,9 +35,8 @@ var swiperMEDIU = new Swiper( ".mySwiperMEDIU", {
 } );
 
 var swiper = new Swiper( ".mySwiperAcademics", {
-     slidesPerView: 4,
      spaceBetween: 30,
-     slidesPerGroup: 1,
+     slidesPerGroup: 2,
      autoplay: {
           delay: 8000,
           disableOnInteraction: false,
@@ -48,7 +47,7 @@ var swiper = new Swiper( ".mySwiperAcademics", {
      },
      breakpoints: {
           1024: {
-               slidesPerView: 4,
+               slidesPerView: 4.5,
                spaceBetween: 30,
           },
      },

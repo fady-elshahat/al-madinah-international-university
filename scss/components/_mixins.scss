@@ -23,7 +23,7 @@
 }
 
 @mixin btnYallow {
-     padding: 0px 10px;
+     padding: 0px 20px;
      background-color: $font-primary;
      color: $font-text;
      border-radius: $border-radius-50;
@@ -91,4 +91,26 @@
      text-align: center;
      width: 100%;
      color: rgba($color: $font-black-light, $alpha: 0.1)
+}
+
+@mixin ScrollBar {
+     ::-webkit-scrollbar {
+          width: 5px;
+     }
+
+     /* Track */
+     ::-webkit-scrollbar-track {
+          background: #dbd9d9;
+     }
+
+     /* Handle */
+     ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 5px;
+     }
+
+     /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+     }
 }
