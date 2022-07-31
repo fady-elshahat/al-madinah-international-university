@@ -1,4 +1,4 @@
-@use '../components/mixins' as *;
+@use '../../components/_mixins.scss' as *;
 
 #academics {
   padding: 50px 0;
@@ -144,6 +144,97 @@
     a {
       text-decoration: none;
       color: $font-text;
+    }
+  }
+}
+
+@media (min-width: 1480px) and (max-width: 1649px) {
+  #academics {
+    h2 {
+
+      &::before {
+        font-size: 150px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1480px) and (max-width: 1649px) {
+  #academics {
+    h2 {
+
+      &::before {
+        font-size: 140px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1140px) and (max-width: 1279px) {
+  #academics {
+    h2 {
+
+      &::before {
+        font-size: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1140px) {
+  #academics {
+    h2 {
+      font-size: 60px;
+
+      &::before {
+        font-size: 80px;
+      }
+    }
+
+    .academics-button {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .btns {
+      position: static;
+      margin-block: 20px 20px;
+      justify-content: center !important;
+
+      .swiper-button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #academics {
+    h2 {
+      font-size: 40px;
+      margin: 20px auto;
+
+      &::before {
+        font-size: 70px;
+      }
+    }
+
+
+  }
+}
+
+@media (max-width: 780px) {
+
+  #academics {
+    h2 {
+      font-size: 40px;
+      margin: 15px auto;
+
+      &::before {
+        content: none !important;
+      }
     }
   }
 }

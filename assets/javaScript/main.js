@@ -11,10 +11,10 @@ const swiperHome = new Swiper( "#home .mySwiperHome", {
           nextEl: ".swiper-button.next",
           prevEl: ".swiper-button.prev",
      },
-     // autoplay: {
-     //      delay: 10000,
-     //      disableOnInteraction: false,
-     // },
+     autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+     },
 } );
 
 const swiperServices = new Swiper( ".mySwiperServices", {
@@ -27,10 +27,25 @@ const swiperServices = new Swiper( ".mySwiperServices", {
 } );
 var swiperMEDIU = new Swiper( ".mySwiperMEDIU", {
      slidesPerView: "auto",
-     spaceBetween: 0,
+     spaceBetween: 15,
      navigation: {
           nextEl: "#mediu-center .swiper-button.next",
           prevEl: "#mediu-center .swiper-button.prev",
+     },
+     breakpoints: {
+
+          992: {
+               slidesPerView: 2.5,
+               spaceBetween: 15,
+          },
+          720: {
+               slidesPerView: 2.5,
+               spaceBetween: 15,
+          },
+          400: {
+               slidesPerView: 1.5,
+               spaceBetween: 15,
+          },
      },
 } );
 
@@ -46,10 +61,28 @@ var swiper = new Swiper( ".mySwiperAcademics", {
           prevEl: "#academics .swiper-button.prev"
      },
      breakpoints: {
-          1024: {
+          1114: {
                slidesPerView: 4.5,
-               spaceBetween: 30,
+               spaceBetween: 15,
           },
+          1024: {
+               slidesPerView: 4,
+               spaceBetween: 15,
+          },
+          992: {
+               slidesPerView: 3.5,
+               spaceBetween: 15,
+          },
+          780: {
+               slidesPerView: 2,
+               spaceBetween: 15,
+          },
+          400: {
+               slidesPerView: 1.5,
+               spaceBetween: 15,
+          },
+
+
      },
 } );
 

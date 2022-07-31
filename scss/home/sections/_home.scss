@@ -1,7 +1,7 @@
-@use '../components/mixins' as *;
+@use '../../components/_mixins.scss' as *;
 
 #home {
-     height: 840px;
+     height: 740px;
 
      .mySwiperHome {
           position: relative;
@@ -9,6 +9,7 @@
 
           .swiper-slide {
                background-position: top left;
+               height: 100%;
           }
 
           .content-swiper {
@@ -34,6 +35,10 @@
                     padding-left: 50px;
                     font-size: 16px;
                     line-height: 42px;
+
+                    &:first-child {
+                         margin-inline-end: 30px;
+                    }
                }
 
                .btn-submit {
@@ -162,8 +167,8 @@
      #side-bar {
           position: absolute;
           z-index: 333;
-          width: 420px;
-          height: 100%;
+          width: 354px;
+          height: 840px;
           background-color: $bg-sideBar;
           top: 0;
           right: 0;
@@ -275,6 +280,253 @@
                .facebook {
                     color: #4458B6;
                }
+          }
+     }
+}
+
+@media (min-width: 1650px) {
+     #home {
+          height: 840px;
+
+          #side-bar {
+               width: 440px;
+               height: 840px;
+          }
+     }
+
+}
+
+
+@media (min-width: 1480px) and (max-width: 1650px) {
+     #home {
+          height: 800px;
+
+          #side-bar {
+               width: 420px;
+               height: 800px;
+          }
+     }
+
+}
+
+
+@media (min-width: 1140px) and (max-width: 1480px) {
+     #home {
+          height: 760px;
+          max-width: 1200px;
+
+          .mySwiperHome {
+               .content-swiper {
+                    width: 65%;
+
+                    &.three {
+                         width: 75%;
+
+                         .number {
+                              font-size: 35px;
+                         }
+
+                         .content {
+                              span {
+                                   font-size: 22px;
+                              }
+
+                              p {
+                                   font-size: 26px;
+                              }
+                         }
+                    }
+
+               }
+
+               .swiper-button {
+
+                    &.next {
+                         bottom: 13%;
+                         right: 32%;
+                    }
+
+                    &.prev {
+                         bottom: 13%;
+                         right: 38%;
+                    }
+
+               }
+
+          }
+
+          #side-bar {
+               height: 760px;
+               width: 350px;
+
+               .academic-side {
+                    .academic-list {
+
+                         .item {
+                              .box {
+                                   font-size: 14px;
+                              }
+                         }
+                    }
+
+                    .btn-acad {
+                         font-size: 14px;
+                    }
+               }
+          }
+     }
+}
+
+@media (max-width: 1139px) {
+     #home {
+          height: 720px;
+
+          .mySwiperHome {
+               .content-swiper {
+                    width: 80%;
+
+               }
+
+               .swiper-button {
+
+                    &.next {
+                         bottom: 13%;
+                         right: 12%;
+                    }
+
+                    &.prev {
+                         bottom: 13%;
+                         right: 18%;
+                    }
+
+               }
+          }
+
+          #side-bar {
+               display: none;
+          }
+     }
+
+     #home .container {
+          max-width: 920px;
+     }
+}
+
+@media (max-width: 992px) {
+     #home {
+          height: 600px;
+
+          .mySwiperHome {
+               .content-swiper {
+                    width: 100%;
+               }
+
+               .swiper-button {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 14px;
+
+                    &.next {
+                         bottom: 13%;
+                         right: 13%;
+                    }
+
+                    &.prev {
+                         bottom: 13%;
+                         right: 18%;
+                    }
+
+               }
+          }
+
+          #side-bar {
+               display: none;
+          }
+     }
+
+     #home .container {
+          max-width: 840px;
+     }
+
+}
+
+@media (max-width: 768px) {
+     #home {
+          .mySwiperHome {
+               .content-swiper {
+                    width: 95%;
+                    margin-inline: auto;
+
+                    .titel-swiper {
+                         font-size: 35px;
+                         line-height: 50px;
+                         width: 60%;
+                    }
+
+                    .desc-swiper {
+                         font-size: 22px;
+                         margin-bottom: 0;
+                    }
+
+                    .form {
+                         flex-direction: column;
+
+                         .form-select {
+                              display: block;
+                              margin-block: 5px;
+
+                         }
+                    }
+
+                    .btn-submit {
+                         margin-left: 0;
+                         margin-top: 10px;
+                    }
+               }
+
+               .swiper-button {
+
+                    &.next {
+                         bottom: 13%;
+                         right: 10%;
+                    }
+
+                    &.prev {
+                         bottom: 13%;
+                         right: 21%;
+                    }
+
+               }
+
+          }
+     }
+
+     #home .container {
+          max-width: 720px;
+     }
+}
+
+@media (max-width: 670px) {
+     #home {
+          .mySwiperHome {
+               .content-swiper {
+                    width: 95%;
+                    margin-inline: auto;
+
+                    .titel-swiper {
+                         font-size: 22px;
+                         line-height: 30px;
+                         width: 40%;
+                    }
+
+                    .desc-swiper {
+                         font-size: 18px;
+                         margin-bottom: 0;
+                    }
+               }
+
+
+
           }
      }
 }

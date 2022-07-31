@@ -17,17 +17,17 @@
 
      <body>
           <!-- Start Navbar -->
-          <nav class="navbar navbar-expand-lg bg-transparent position-absolute w-100 py-4">
+          <nav id="navbar" class="navbar navbar-expand-lg bg-transparent position-absolute w-100 py-4">
                <div class="container">
                     <a class="navbar-brand" href="#">
                          <img src="./assets/img/Logo.svg" alt="Logo svg" width="227" height="71">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                          aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
+                         <i class="text-white fa-solid fa-bars-staggered"></i>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                          <ul class="navbar-nav  mb-lg-0">
                               <li class="nav-item">
                                    <a class="nav-link active" aria-current="page" href="#">About MEDIU</a>
@@ -59,14 +59,14 @@
                <section id="home">
                     <div class="swiper mySwiperHome">
                          <div class="swiper-wrapper">
-                              <div class="swiper-slide position-relative"
-                                   style="background-image:url('/assets/img/section 1/1.png');">
+
+                              <div class="swiper-slide" style="background-image:url('/assets/img/section 1/1.png');">
                                    <div class="container h-100">
                                         <div class="content-swiper  h-100">
                                              <h2 class="titel-swiper">Academic Programs</h2>
                                              <p class="desc-swiper">All specialties</p>
-                                             <div class="d-flex justify-content-between align-items-center">
-                                                  <select class="form-select me-3" aria-label=" select example">
+                                             <div class="form d-flex justify-content-between">
+                                                  <select class="form-select" aria-label=" select example">
                                                        <option selected>
                                                             All Stages
                                                        </option>
@@ -80,10 +80,13 @@
                                                        <option value="2">Two</option>
                                                        <option value="3">Three</option>
                                                   </select>
-                                                  <button class="btn btn-submit">
-                                                       <i class="fa fa-search"></i>
-                                                       Search
-                                                  </button>
+                                                  <div>
+                                                       <button class="btn btn-submit">
+                                                            <i class="fa fa-search"></i>
+                                                            Search
+                                                       </button>
+                                                  </div>
+
                                              </div>
                                         </div>
                                    </div>
@@ -378,6 +381,29 @@
                <section id="mediu-center" class="py-5">
                     <div class="container-fluid px-0">
                          <h2 class="title">MEDIU Center</h2>
+                         <div class="tab-small">
+                              <ul
+                                   class="tab-list-small d-flex justify-content-between align-items-center list-unstyled">
+                                   <li class="activ">
+                                        News
+                                   </li>
+                                   <li>
+                                        Events
+                                   </li>
+                                   <li>
+                                        Gallery
+                                   </li>
+                                   <li>
+                                        Research
+                                   </li>
+                                   <li>
+                                        Journals
+                                   </li>
+                                   <li>
+                                        Discussions
+                                   </li>
+                              </ul>
+                         </div>
                          <div class="row justify-content-center align-items-start">
                               <div class="col-md-3 pe-0">
                                    <div class="tabs">
@@ -409,7 +435,7 @@
                                         </ul>
                                    </div>
                               </div>
-                              <div class="col-md-9 ps-0 position-relative">
+                              <div class="col-md-9 ps-0 ">
                                    <div class="swiper mySwiperMEDIU">
                                         <div class="swiper-wrapper">
                                              <div class="swiper-slide">
@@ -433,7 +459,6 @@
                                                        VIVA of the Student Ramzan Mohammed </p>
                                              </div>
                                         </div>
-                                        <button class="btn btn-more">More News</button>
                                    </div>
                                    <div class="btns d-flex justify-content-end align-items-center">
                                         <div class="swiper-button prev">
@@ -443,6 +468,8 @@
                                              <i class="fa-solid fa-arrow-right"></i>
                                         </div>
                                    </div>
+                                   <button class="btn btn-more">More News</button>
+
                               </div>
                          </div>
                     </div>
@@ -631,9 +658,34 @@
 
                <!-- Start Our Services Section -->
                <section id="services">
+                    <h2>Our Services</h2>
+                    <div class="tab-small">
+                         <ul class="tab-list-small d-flex list-unstyled">
+                              <li class="activ">
+                                   Staff Portal
+                              </li>
+                              <li>
+                                   Academic Portal
+                              </li>
+                              <li>
+                                   Student Portal
+                              </li>
+                              <li>
+                                   Applicant Portal
+                              </li>
+                              <li>
+                                   Partnership Portal
+                              </li>
+                              <li>
+                                   MEDIU Centre of Excellence
+                              </li>
+                              <li>Alumni Portal
+                              </li>
+                         </ul>
+                    </div>
                     <div class="container">
-                         <h2>Our Services</h2>
-                         <div class="row service-content d-flex align-items-center">
+
+                         <div class="row service-content d-flex align-items-start">
                               <div class="col-md-3">
                                    <ul class="services-list list-unstyled">
                                         <li><a href="">Staff Portal</a></li>
@@ -643,16 +695,9 @@
                                         <li><a href="">Partnership Portal</a></li>
                                         <li><a href="">MEDIU Centre of Excellence</a></li>
                                         <li><a href="">Alumni Portal</a></li>
-                                        <li><a href="">Alumni Club</a></li>
-                                        <li><a href="">Marketing Agents Portal</a></li>
+                                        <li><a href="">Partnership Portal</a></li>
                                         <li><a href="">MEDIU Centre of Excellence</a></li>
                                         <li><a href="">Alumni Portal</a></li>
-                                        <li><a href="">Alumni Club</a></li>
-                                        <li><a href="">Marketing Agents Portal</a></li>
-                                        <li><a href="">MEDIU Centre of Excellence</a></li>
-                                        <li><a href="">Alumni Portal</a></li>
-                                        <li><a href="">Alumni Club</a></li>
-                                        <li><a href="">Marketing Agents Portal</a></li>
                                    </ul>
                               </div>
                               <div class="col-md-6 px-0 position-relative">
