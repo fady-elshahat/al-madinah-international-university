@@ -1,0 +1,403 @@
+@use '../../components/mixins' as *;
+
+#mediu-center {
+     background-color: $bg-mediu-center;
+     overflow-x: hidden;
+
+     .title {
+          @include waterMark;
+          margin-bottom: 35px;
+
+          &::before {
+               @include wateMarkBefore;
+               content: "MEDIU Center"
+          }
+     }
+
+     .tab-small {
+          overflow-x: auto;
+          overflow-y: hidden;
+          padding: 0 30px;
+          display: none;
+
+          .tab-list-small {
+               li {
+                    font-size: 19px;
+                    color: $font-text;
+                    padding: 0 20px;
+                    width: fit-content;
+                    color: $font-text;
+                    transition: 0.4s;
+                    height: 50px;
+                    position: relative;
+
+                    &.activ {
+                         color: $font-secondary;
+                         font-size: 21px;
+                         font-weight: 500;
+
+                         &::after {
+                              @include lineTab;
+                              content: "";
+                         }
+                    }
+
+                    &::after {
+                         @include lineTab;
+                    }
+
+                    &:hover {
+                         color: $font-secondary;
+                         font-size: 21px;
+                         font-weight: 500;
+
+                         &::after {
+                              content: "";
+                         }
+                    }
+               }
+          }
+     }
+
+     .tabs {
+          background-color: $font-primary;
+          padding: 19px 5px;
+
+          ul {
+               .item {
+                    padding: 25px 45px;
+                    position: relative;
+                    font-size: 20px;
+                    font-weight: 400;
+                    transition: 0.5s;
+                    color: $font-text ;
+                    transition: 0.4s all;
+
+                    &.active {
+                         background-color: $font-white;
+                         color: $font-secondary;
+                         border-radius: 5px;
+                         font-size: 22px;
+
+                         &::after {
+                              content: "\f30b";
+                         }
+
+                         .icon {
+                              &::before {
+                                   content: url(../../assets/img/services/web-programming2.svg)
+                              }
+                         }
+                    }
+
+                    .icon {
+                         position: relative;
+                         margin-inline-end: 25px;
+                         display: inline-block;
+
+                         &::before {
+                              content: url(../../assets/img/services/web-programming.svg);
+                              display: inline-block;
+                              width: 10px;
+                              height: 15px;
+                              position: absolute;
+                              left: -30px;
+                              top: -18px;
+                         }
+                    }
+
+                    &::after {
+                         color: #ED1A3B;
+                         font-family: "Font Awesome 5 Free";
+                         content: "";
+                         position: absolute;
+                         top: 36%;
+                         right: 20%;
+                         z-index: 33;
+                         font-weight: 700;
+                         font-size: 18px;
+                    }
+
+                    &:nth-child(4)::after {
+                         right: 4%;
+                    }
+
+                    &:hover {
+                         background-color: $font-white;
+                         color: $font-secondary;
+                         border-radius: 5px;
+                         font-size: 22px;
+
+                         &::after {
+                              content: "\f30b";
+                         }
+
+                         .icon {
+                              &::before {
+                                   content: url(../../assets/img/services/web-programming2.svg)
+                              }
+                         }
+
+                    }
+               }
+
+               img {
+                    margin-inline-end: 20px;
+                    display: inline-block;
+               }
+
+          }
+     }
+
+     .col-md-9 {
+          position: relative;
+     }
+
+     .mySwiperMEDIU {
+          .swiper-slide {
+               width: 40%;
+
+               .desc {
+                    font-size: 20px;
+                    line-height: 36px;
+                    font-weight: 500;
+                    width: 80%;
+                    margin-top: 26px;
+               }
+          }
+     }
+
+     .btn-more {
+          @include btnYallow;
+
+          &:hover {
+               border-color: transparent;
+          }
+     }
+
+     .btns {
+          position: absolute;
+          right: 40px;
+          top: -75px;
+          z-index: 333;
+
+          .swiper-button {
+               width: 45px;
+               height: 45px;
+               background-color: $font-white;
+               z-index: 3;
+               border-radius: 100%;
+               @include flexCentar;
+               color: $font-white;
+
+               &.next {
+                    background-color: $font-secondary;
+                    border-radius: 50%;
+               }
+
+               &.prev {
+                    background-color: $font-secondary;
+                    border-radius: 50%;
+                    margin-right: 30px;
+               }
+
+               &.swiper-button-disabled {
+                    border: 1px solid #999;
+                    color: #999;
+                    background-color: $font-white;
+               }
+          }
+     }
+}
+
+
+@media (min-width: 1650px) {
+     #mediu-center {
+          .mySwiperMEDIU {
+               .swiper-slide {
+                    width: 36%;
+               }
+          }
+     }
+}
+
+@media (min-width: 1480px) and (max-width: 1649px) {
+     #mediu-center {
+          .title {
+
+               &::before {
+                    font-size: 150px;
+               }
+          }
+
+          .mySwiperMEDIU {
+               .swiper-slide {
+                    width: 43%;
+               }
+          }
+     }
+}
+
+@media (min-width: 1280px) and (max-width: 1480px) {
+     #mediu-center {
+          .title {
+
+               &::before {
+                    font-size: 140px;
+               }
+          }
+
+          .tabs {
+               padding: 15px 5px;
+
+               ul {
+                    .item {
+                         padding: 15px 40px;
+                         padding-inline-end: 0;
+                         font-size: 18px;
+
+                         &:hover {
+                              font-size: 20px;
+                         }
+                    }
+               }
+          }
+
+          .mySwiperMEDIU {
+               .swiper-slide {
+                    width: 36%;
+
+                    .desc {
+                         font-size: 17px;
+                         margin-top: 10px;
+                         line-height: 25px;
+                    }
+               }
+          }
+     }
+}
+
+@media (min-width: 1140px) and (max-width: 1279px) {
+     #mediu-center {
+          .title {
+
+               &::before {
+                    font-size: 130px;
+               }
+          }
+
+          .tabs {
+               padding: 11px 5px;
+
+               ul {
+                    .item {
+                         padding: 14px 40px;
+                         font-size: 17px;
+                         padding-inline-end: 0;
+
+                         &:hover {
+                              font-size: 19px;
+                         }
+                    }
+               }
+          }
+
+          .mySwiperMEDIU {
+               .swiper-slide {
+                    width: 38%;
+
+                    .desc {
+                         font-size: 16px;
+                         margin-top: 10px;
+                         line-height: 20px;
+                    }
+               }
+          }
+     }
+}
+
+
+
+
+@media (max-width: 1140px) {
+     #mediu-center {
+          .title {
+               font-size: 60px;
+
+               &::before {
+                    font-size: 80px;
+               }
+          }
+
+          .tabs {
+               display: none;
+          }
+
+          .tab-small {
+               display: block;
+          }
+
+          .col-md-9 {
+               width: 100%;
+          }
+
+          .mySwiperMEDIU {
+               .swiper-slide {
+                    width: auto;
+                    margin-inline-start: 20px;
+
+                    .desc {
+                         font-size: 16px;
+                         margin-top: 10px;
+                         line-height: 20px;
+                    }
+               }
+          }
+
+          .btn-more {
+               display: block;
+               margin: 0 auto;
+          }
+
+          .btns {
+               position: static;
+               margin-block: 10px 20px;
+               justify-content: center !important;
+
+               .swiper-button {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 14px;
+               }
+          }
+
+     }
+}
+
+@media (max-width: 992px) {
+     #mediu-center {
+          .title {
+               font-size: 40px;
+               margin: 20px auto;
+
+               &::before {
+                    font-size: 70px;
+               }
+          }
+
+
+     }
+}
+
+@media (max-width: 780px) {
+     #mediu-center {
+          .title {
+               font-size: 40px;
+               margin: 15px auto;
+
+               &::before {
+                    content: none !important;
+               }
+          }
+     }
+}

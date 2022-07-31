@@ -95,22 +95,34 @@
 
 @mixin ScrollBar {
      ::-webkit-scrollbar {
-          width: 5px;
+          width: 5px !important;
      }
 
      /* Track */
      ::-webkit-scrollbar-track {
           background: #dbd9d9;
+          width: 5px !important;
      }
 
      /* Handle */
      ::-webkit-scrollbar-thumb {
-          background: #888;
+          background: rgb(176, 176, 176);
           border-radius: 5px;
+          width: 5px !important;
      }
 
      /* Handle on hover */
      ::-webkit-scrollbar-thumb:hover {
-          background: #666;
+          background: rgb(156, 156, 156);
      }
+}
+
+@mixin lineTab {
+     content: none;
+     position: absolute;
+     width: 40%;
+     height: 3px;
+     background-color: $font-secondary;
+     bottom: 7px;
+     left: 20px;
 }

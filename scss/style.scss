@@ -7,15 +7,18 @@
 
 
 // Section
-@import 'sections/navbar';
-@import 'sections/home';
-@import 'sections/footer';
-@import 'sections/apply';
-@import 'sections/services';
-@import 'sections/academics';
-@import 'sections/mediu-center';
+
+// Home
+@import 'home/sections/navbar';
+@import 'home/sections/home';
+@import 'home/sections/footer';
+@import 'home/sections/apply';
+@import 'home/sections/services';
+@import 'home/sections/academics';
+@import 'home/sections/mediu-center';
 
 body {
      font-family: 'Poppins', sans-serif;
      color: $font-text;
+
 }

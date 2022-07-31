@@ -1,0 +1,761 @@
+@use '../../components/_mixins.scss' as *;
+
+#services {
+  background-color: $bg-section;
+  padding: 50px 0;
+  @include ScrollBar;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .service-content {
+    margin-top: 35px;
+  }
+
+  h2 {
+    @include waterMark;
+
+    &::before {
+      @include wateMarkBefore;
+    }
+  }
+
+  .tab-small {
+    padding: 0 30px;
+    display: none;
+
+    .tab-list-small {
+      display: inline-block;
+      overflow: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      max-width: 100%;
+      padding-bottom: 20px;
+
+
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+
+      li {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 19px;
+        padding: 0 5px;
+        color: $font-text;
+        transition: 0.4s;
+        height: 50px;
+        position: relative;
+        margin-inline: 20px;
+
+        &.activ {
+          color: $font-secondary;
+          font-size: 21px;
+          font-weight: 500;
+
+          &::after {
+            @include lineTab;
+            left: 5px;
+            content: "";
+          }
+        }
+
+        &::after {
+          @include lineTab;
+          left: 5px;
+        }
+
+        &:hover {
+          color: $font-secondary;
+          font-size: 21px;
+          font-weight: 500;
+
+          &::after {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+
+  .conta-slider {
+    height: 780px;
+    overflow-y: hidden;
+
+    .mySwiperServices {
+      .swiper-slide {
+        max-height: 100%;
+        max-width: 100%;
+      }
+
+      .service-card {
+        p {
+          font-size: 17px;
+          font-weight: 300;
+          margin-bottom: 25px;
+          line-height: 34px
+        }
+
+        button {
+          @include btnSecondary;
+          padding: 8px 46px;
+          border-radius: $border-radius-50;
+          font-size: 18;
+          font-weight: 600;
+        }
+
+        i {
+          margin-left: 10px;
+        }
+
+        img {
+          transform: translateY(15px);
+        }
+
+        .service-card-content {
+          background-color: white;
+          padding: 35px 25px;
+          border-top-left-radius: 30px;
+          transform: translateY(-221px);
+          box-shadow: $box-shadow;
+        }
+      }
+
+
+
+    }
+  }
+
+  .services-list {
+    max-height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: rtl;
+    padding: 0;
+
+    li {
+      position: relative;
+      font-size: 20px;
+      font-weight: 400;
+      transition: 0.5s;
+      text-align: left;
+      margin-inline-end: 60px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      &::before {
+        content: url('../../assets/img/services/web-programming.svg');
+        display: inline-block;
+        width: 10px;
+        height: 15px;
+        position: absolute;
+        left: -10px;
+      }
+
+      a {
+        color: $font-text;
+        text-decoration: none;
+        transition: 0.3s;
+        margin-inline-end: 20px;
+      }
+
+      &.active {
+        transition: 0.5s;
+
+        a {
+          color: $font-secondary;
+          font-size: 24px;
+          font-weight: 400;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            background-color: $font-secondary;
+          }
+
+          &::before {
+            font-family: 'Font Awesome 5 Free';
+            content: '\f30b';
+            position: absolute;
+            font-weight: 700;
+            right: -30px;
+            bottom: -20px;
+            color: $font-secondary;
+          }
+        }
+
+        &::before {
+          content: url("../../assets/img/services/web-programming2.svg");
+          position: absolute;
+          font-weight: 700;
+          left: -10px;
+          color: $font-secondary;
+        }
+      }
+    }
+
+  }
+
+
+
+  .btns {
+    top: 13px;
+    z-index: 4444;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 10px;
+    left: -27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 225px;
+    box-shadow: $box-shadow;
+
+
+    .swiper-button {
+      width: 45px;
+      height: 45px;
+      background-color: $font-white;
+      z-index: 3;
+      border-radius: 100%;
+      @include flexCentar;
+      color: $font-white;
+
+      &.next {
+        background-color: $font-secondary;
+        border-radius: 50%;
+      }
+
+      &.prev {
+        background-color: $font-secondary;
+        border-radius: 50%;
+      }
+
+      &.auto {
+        border: 1px dashed #999;
+        border-radius: 50%;
+        color: $font-secondary;
+        cursor: pointer;
+      }
+
+      &.swiper-button-disabled {
+        border: 1px solid #999;
+        color: $font-black-light;
+        background-color: $font-white;
+      }
+
+
+
+    }
+  }
+
+  .statistics-list {
+    margin-inline-start: 50px;
+
+    li {
+      @include containerCounter;
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+
+      span {
+        color: $font-secondary;
+        font-size: 42px;
+        font-weight: 300;
+      }
+
+      .number {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      .statistics-tiltle {
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
+
+    .statics-container {
+      margin-left: 10px;
+    }
+
+    .statics-counter {
+      display: inline-block;
+
+      span {
+        @include spanCounterAndLine;
+        margin-bottom: 10px;
+        margin-right: 0;
+
+        &::before {
+          @include counter;
+        }
+
+        &::after {
+          @include line;
+
+        }
+      }
+    }
+
+    .statics-content {
+      display: inline-block;
+    }
+
+    li:nth-child(3) .statics-counter span {
+      transform: translateY(-80%);
+    }
+  }
+}
+
+
+@media (max-width: 1649px) {
+  #services {
+    h2 {
+
+      &::before {
+        font-size: 150px;
+      }
+    }
+
+    .statistics-list {
+      margin-inline-start: 15px;
+    }
+
+    .services-list {
+      li {
+        font-size: 18px;
+
+        &.active a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1499px) {
+  #services {
+    h2 {
+
+      &::before {
+        font-size: 140px;
+      }
+    }
+
+    .statistics-list {
+
+      li .statistics-tiltle {
+        font-size: 22px;
+      }
+    }
+
+    .services-list {
+      li {
+        a {
+          margin-inline-end: 10px;
+        }
+
+        &.active a {
+          font-size: 20px;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media (max-width: 1358px) {
+  #services {
+    .conta-slider {
+      height: 700px;
+    }
+
+
+
+    .statistics-list {
+
+      li .statistics-tiltle {
+        font-size: 20px;
+      }
+    }
+
+    .services-list {
+      li {
+        font-size: 16px;
+
+        a {
+          margin-inline-end: 10px;
+        }
+
+        &.active a {
+          font-size: 18px;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media (max-width: 1251px) {
+  #services {
+    padding: 0 30px;
+
+    .conta-slider {
+      height: 570px;
+    }
+
+    .container {
+      max-width: 1200px;
+    }
+
+    h2 {
+      font-size: 70px;
+
+      &::before {
+        font-size: 100px;
+      }
+    }
+
+    .statistics-list {
+
+      li {
+        .statistics-tiltle {
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 35px;
+        }
+      }
+    }
+
+    .services-list {
+      max-height: 500px;
+      margin-block-start: 50px;
+
+      li {
+        font-size: 15px;
+
+        a {
+          margin-inline-end: 5px;
+        }
+
+        &.active a {
+          font-size: 17px;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1140px) {
+  #services {
+    padding: 0 30px;
+
+    .conta-slider {
+      height: 740px;
+      overflow-y: visible;
+    }
+
+    .container {
+      max-width: 1050px;
+    }
+
+    h2 {
+      font-size: 60px;
+
+      &::before {
+        font-size: 80px;
+      }
+    }
+
+    .col-md-3:first-child {
+      display: none;
+    }
+
+    .conta-slider .mySwiperServices .service-card .service-card-content {
+      transform: translateY(-90%);
+      padding: 15px 20px;
+    }
+
+    .conta-slider .mySwiperServices .service-card p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 32px;
+    }
+
+    .tab-small {
+      display: block;
+    }
+
+    .service-content {
+      margin-top: 0;
+    }
+
+    .col-md-3:last-child {
+      width: 25%;
+    }
+
+    .col-md-6 {
+      width: 75%;
+    }
+
+    .statistics-list {
+      li {
+        .statistics-tiltle {
+          font-size: 15px;
+        }
+
+        span {
+          font-size: 35px;
+        }
+      }
+    }
+
+    .services-list {
+      max-height: 500px;
+      margin-block-start: 50px;
+
+      li {
+        font-size: 15px;
+
+        a {
+          margin-inline-end: 5px;
+        }
+
+        &.active a {
+          font-size: 17px;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1040px) {
+  #services {
+    padding: 0 30px;
+
+    h2 {
+
+      &::before {
+        font-size: 130px;
+      }
+    }
+
+    .conta-slider {
+      height: 700px;
+      overflow-y: visible;
+    }
+
+    .container {
+      max-width: 992px;
+    }
+
+    .statistics-list .statics-counter span {
+      width: 40px;
+      height: 35px;
+
+      &::before {
+        top: -19px;
+        left: 13px;
+      }
+    }
+
+    .statistics-list {
+      li {
+        .statistics-tiltle {
+          font-size: 13px;
+        }
+
+        span {
+          font-size: 26px;
+        }
+      }
+    }
+
+    .btns {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 864px) {
+  #services {
+    padding: 0 20px;
+
+    .container {
+      max-width: 720px;
+
+      .row {
+        justify-content: center;
+      }
+    }
+
+    .conta-slider {
+      height: 650px;
+      overflow-y: visible;
+    }
+
+    .swiper {
+      max-height: 100%;
+    }
+
+    .conta-slider .mySwiperServices .service-card .service-card-content {
+      transform: translateY(-100%);
+      padding: 14px 18px;
+    }
+
+    .col-md-3:last-child {
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .col-md-6 {
+      width: 100%;
+    }
+
+    .statistics-list {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    .statistics-list {
+
+
+      li {
+        .statistics-tiltle {
+          font-size: 20px;
+        }
+
+        span {
+          font-size: 33px;
+        }
+      }
+    }
+
+    .statistics-list .statics-counter span {
+      width: 50px;
+      height: 45px;
+
+      &::before {
+        top: -19px;
+        left: 13px;
+      }
+    }
+
+    .btns {
+      left: -13px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  #services {
+    padding: 0 30px;
+
+    .conta-slider {
+      height: 600px;
+      overflow-y: visible;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin: 15px auto;
+
+      &::before {
+        content: none !important;
+      }
+    }
+
+    .conta-slider .mySwiperServices .service-card .service-card-content {
+      transform: translateY(-88%);
+      padding: 10px 15px;
+
+    }
+
+    .conta-slider .mySwiperServices .service-card p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 29px;
+    }
+
+    .conta-slider .mySwiperServices .service-card button {
+      font-size: 14px;
+    }
+
+    .col-md-3:last-child {
+      width: 60%;
+      margin-block: 0 20px;
+      margin-inline: auto;
+    }
+
+    .statistics-list {
+      width: 100%;
+    }
+
+    .container {
+      max-width: 630px;
+    }
+
+    .btns {
+      height: 188px;
+      left: -13px
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #services {
+    .conta-slider {
+      height: 570px;
+      overflow-y: visible;
+    }
+
+    .conta-slider .mySwiperServices .service-card .service-card-content {
+      transform: translateY(-86%);
+      padding: 10px 15px;
+    }
+
+    .conta-slider .mySwiperServices .service-card p {
+      margin-bottom: 0;
+    }
+
+    .col-md-3:last-child {
+      width: 60%;
+      margin-block: 0 20px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #services {
+    .conta-slider {
+      height: 520px;
+      overflow-y: visible;
+    }
+
+    .conta-slider .mySwiperServices .service-card .service-card-content {
+      transform: translateY(-77%);
+      padding: 10px 15px;
+    }
+
+    .col-md-3:last-child {
+      width: 100%;
+      margin-block: 0 20px;
+    }
+  }
+}
