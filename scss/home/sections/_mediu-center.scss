@@ -14,153 +14,12 @@
           }
      }
 
-     .image {
-          position: relative;
-
-          .image-content {
-               width: 40%;
-               background-color: white;
-               position: absolute;
-               bottom: 5%;
-               left: 5%;
-               padding: 5% 0 1% 3%;
-          }
-
-          span {
-               display: block;
-          }
-
-          .date {
-               font-size: 32px;
-               font-weight: 500;
-               line-height: 22px;
-          }
-
-          .day {
-               position: relative;
-               color: $font-black-light;
-               width: fit-content;
-               font-size: 20px;
-               font-weight: 400;
-               margin-bottom: 7px;
-
-               &::after {
-                    position: absolute;
-                    content: '';
-                    width: 100%;
-                    height: 1px;
-                    background-color: $font-black-light;
-                    bottom: -1px;
-                    left: 0;
-               }
-          }
-
-          .year {
-               font-size: 18px;
-               font-weight: 400;
-          }
-
-          i {
-               position: absolute;
-               color: white;
-               right: 12%;
-               bottom: 5%;
-               font-size: 20px;
-          }
-     }
-
-     .image-tab1-4 {
-          background-image: url("../../../assets/img/mediu center/7.png");
-          background-size: cover;
-          background-position: center center;
-          height: 550px;
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-around;
-          padding-bottom: 3%;
-     }
-
-
-     .image-tab2-4 {
-          background-image: url("../../../assets/img/mediu center/7.png");
-          background-size: cover;
-          background-position: center center;
-          height: 550px;
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-around;
-          padding-bottom: 3%;
-          .apply-box {
-               margin: auto;
-               width: fit-content;
-          }
-     }
-
-     .apply-box {
-          padding: 20px 40px 20px 20px;
-          justify-content: center;
-          width: 32%;
-          background-color: white;
-          position: relative;
-
-          &::before {
-               content: '';
-               background-image: linear-gradient(to right, #826A51 0%, #ED1A3B 100%);
-               left: 0px;
-               right: 0px;
-               bottom: 0px;
-               height: 3px;
-               position: absolute;
-          }
-
-          .applyNow span {
-               display: block;
-               width: 40px;
-               height: 2px;
-               background-color: rgba($color: #000000, $alpha: 0.10);
-               display: inline-block;
-               margin-right: 20px;
-               position: absolute;
-               left: -20px;
-          }
-
-
-          .num span {
-               @include spanCounterAndLine;
-
-               &::after {
-                    @include line;
-               }
-
-          }
-
-
-          .apply-content {
-               position: relative;
-
-               .apply-content-p {
-                    margin-bottom: 30px;
-               }
-
-               &-p1 {
-                    font-weight: 400;
-                    font-size: 18px;
-                    color: $font-black-50;
-               }
-
-               &-p2 {
-                    font-weight: 400;
-                    font-size: 23px;
-               }
-          }
-
-     }
-
      .tab-small {
           overflow-x: auto;
           overflow-y: hidden;
           padding: 0 30px;
           display: none;
+          @include ScrollBar;
 
           .tab-list-small {
                li {
@@ -309,49 +168,131 @@
           }
      }
 
-     .btn-more {
-          @include btnYallow;
+     .conta-tab-3 {
+          width: 100%;
 
-          &:hover {
-               border-color: transparent;
+          .mySwiperMEDIU-2 {
+               width: 80%;
+               height: 100%;
+
+               .swiper-slide {
+                    background-size: cover;
+                    background-position: top center;
+               }
+
+               .card {
+                    bottom: 12%;
+                    padding: 46px 20px 30px 33px;
+                    display: flex;
+                    justify-content: center;
+
+                    .desc {
+                         margin-bottom: 0;
+                         font-size: 27px;
+                         line-height: 32px;
+                         font-weight: 500;
+
+                    }
+
+                    span {
+                         font-size: 18px;
+                         display: block;
+                         margin-bottom: 19px;
+                         font-weight: 500;
+                    }
+
+                    a {
+                         color: $font-secondary;
+                         text-decoration: none;
+                         font-size: 16px;
+                         font-weight: 500;
+                         position: relative;
+
+                         &::before {
+                              content: "";
+                              position: absolute;
+                              width: 50px;
+                              height: 1px;
+                              background-color: rgba($color: $font-black-light, $alpha: 0.2);
+                              right: -100%;
+                              top: 12px;
+                         }
+                    }
+               }
+
+
           }
+
      }
 
-     .btns {
-          position: absolute;
-          right: 40px;
-          top: -75px;
-          z-index: 333;
+     .mySwiperMEDIU.tab-3 {
+          height: 100%;
 
-          .swiper-button {
-               width: 45px;
-               height: 45px;
-               background-color: $font-white;
-               z-index: 3;
-               border-radius: 100%;
-               @include flexCentar;
-               color: $font-white;
 
-               &.next {
-                    background-color: $font-secondary;
-                    border-radius: 50%;
-               }
+          .swiper-wrapper {
+               display: flex;
+               flex-direction: column;
+               width: 300px;
+               height: 100%;
 
-               &.prev {
-                    background-color: $font-secondary;
-                    border-radius: 50%;
-                    margin-right: 30px;
-               }
-
-               &.swiper-button-disabled {
-                    border: 1px solid #999;
-                    color: #999;
-                    background-color: $font-white;
+               .swiper-slide {
+                    width: 93% !important;
+                    height: 20%;
+                    margin: 0 auto;
+                    background-position: top center;
+                    background-size: cover;
+                    margin-bottom: 15px
                }
           }
+
      }
 }
 
+
+
+
+
+.btn-more {
+     @include btnYallow;
+
+     &:hover {
+          border-color: transparent;
+     }
+}
+
+.btns {
+     position: absolute;
+     right: 40px;
+     top: -75px;
+     z-index: 333;
+
+     .swiper-button {
+          width: 45px;
+          height: 45px;
+          background-color: $font-white;
+          z-index: 3;
+          border-radius: 100%;
+          @include flexCentar;
+          color: $font-white;
+
+          &.next {
+               background-color: $font-secondary;
+               border-radius: 50%;
+          }
+
+          &.prev {
+               background-color: $font-secondary;
+               border-radius: 50%;
+               margin-right: 30px;
+          }
+
+          &.swiper-button-disabled {
+               border: 1px solid #999;
+               color: #999;
+               background-color: $font-white;
+          }
+     }
+}
 
 @media (min-width: 1650px) {
      #mediu-center {
@@ -360,6 +301,15 @@
                     width: 36%;
                }
           }
+
+          .conta-tab-3 {
+               height: 600px;
+
+               .mySwiperMEDIU-2 {
+                    height: 89%;
+               }
+          }
+
      }
 }
 
@@ -377,11 +327,20 @@
                     width: 43%;
                }
           }
+
+          .conta-tab-3 {
+               height: 600px;
+
+               .mySwiperMEDIU-2 {
+                    height: 89%;
+               }
+          }
      }
 }
 
 @media (min-width: 1280px) and (max-width: 1480px) {
      #mediu-center {
+
           .title {
 
                &::before {
@@ -414,6 +373,14 @@
                          margin-top: 10px;
                          line-height: 25px;
                     }
+               }
+          }
+
+          .conta-tab-3 {
+               height: 446px;
+
+               .mySwiperMEDIU-2 {
+                    height: 89%;
                }
           }
      }
@@ -455,15 +422,26 @@
                     }
                }
           }
+
+          .conta-tab-3 {
+               height: 446px;
+
+               .mySwiperMEDIU-2 {
+                    height: 89%;
+               }
+
+
+
+          }
+
+          .btn-more {
+               margin: 100px auto 0;
+          }
      }
 }
 
 
-@media (min-width: 1140px) and (max-width: 1480px) {
-     .image-tab1-4 {
-          height: 395px !important;
-     }
-}
+
 
 @media (max-width: 1140px) {
      #mediu-center {
@@ -507,7 +485,7 @@
 
           .btn-more {
                display: block;
-               margin: 0 auto;
+               margin: 100px auto 0;
           }
 
           .btns {
@@ -522,15 +500,28 @@
                }
           }
 
-     }
-}
+          .conta-tab-3 {
+               height: 550px;
+               display: block !important;
+               padding-inline: 30px;
 
-@media (max-width: 1020px) {
-     .image-tab1-4 {
-          display: none !important;
-     }
-     .image-tab2-4 {
-          display: flex !important;
+               .mySwiperMEDIU-2 {
+                    width: 100%;
+                    height: 89%;
+               }
+
+               .mySwiperMEDIU.tab-3 {
+                    margin-block-start: 20px;
+
+                    .swiper-wrapper {
+                         display: flex;
+                         flex-direction: row;
+                         justify-content: center;
+                         width: 25%;
+                         margin-bottom: 15px;
+                    }
+               }
+          }
      }
 }
 
@@ -559,24 +550,5 @@
                     content: none !important;
                }
           }
-
-          .image {
-               .date {
-                    font-size: 27px;
-               }
-
-               .day {
-                    font-size: 16px;
-               }
-
-               .year {
-                    font-size: 16px;
-               }
-          }
      }
 }
-
-
-
-// 1480
-// 1140

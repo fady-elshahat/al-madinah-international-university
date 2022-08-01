@@ -48,6 +48,18 @@ var swiperMEDIU = new Swiper( ".mySwiperMEDIU", {
           },
      },
 } );
+var swiperMediuTab3 = new Swiper( ".mySwiperMEDIU.tab-3", {
+     spaceBetween: 10,
+     slidesPerView: 4,
+     freeMode: true,
+     watchSlidesProgress: true,
+} );
+var swiperMediuTab32 = new Swiper( ".mySwiperMEDIU-2.tab-3", {
+     spaceBetween: 0,
+     thumbs: {
+          swiper: swiperMediuTab3,
+     },
+} );
 
 var swiper = new Swiper( ".mySwiperMediuTab4", {
      spaceBetween: 30,
@@ -132,7 +144,7 @@ statisticsList.forEach( ( el, ) => {
 } );
 
 // Swiper In Apply
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper( ".mySwiper", {
      spaceBetween: 30,
      pagination: {
           el: ".swiper-pagination",
@@ -142,7 +154,7 @@ var swiper = new Swiper(".mySwiper", {
           delay: 7000,
           disableOnInteraction: false,
      },
-});
+} );
 // Auto Play Swiper Services
 
 btnAutoPlay.addEventListener( 'click', () => {
