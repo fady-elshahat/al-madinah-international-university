@@ -384,7 +384,9 @@
           .mySwiperHome {
                .content-swiper {
                     width: 80%;
-
+                    &.three{
+                         width: 100%;
+                    }
                }
 
                .swiper-button {
@@ -419,6 +421,33 @@
           .mySwiperHome {
                .content-swiper {
                     width: 100%;
+
+                    .titel-swiper {
+                         font-size: 35px;
+                         line-height: 45px;
+                    }
+
+                    &.two .desc-swiper {
+                         font-size: 27px;
+                    }
+                    &.three{
+                         .titel-swiper{
+                              margin-bottom: 20px !important;
+                         }
+                         .number{
+                              font-size: 35px;
+                         }
+                         .content{
+                              span {
+                                   font-size: 22px;
+                                   font-weight: 400;
+                               }
+                               p{
+                                   font-size: 22px;
+
+                               }
+                         } 
+                    }
                }
 
                .swiper-button {
@@ -427,12 +456,12 @@
                     font-size: 14px;
 
                     &.next {
-                         bottom: 13%;
-                         right: 13%;
+                         bottom: 10%;
+                         right: 10%;
                     }
 
                     &.prev {
-                         bottom: 13%;
+                         bottom: 10%;
                          right: 18%;
                     }
 
@@ -457,10 +486,9 @@
                     width: 95%;
                     margin-inline: auto;
 
-                    .titel-swiper {
-                         font-size: 35px;
-                         line-height: 50px;
-                         width: 60%;
+                    &.two .desc-swiper {
+                         font-size: 24px;
+                         line-height: 36px;
                     }
 
                     .desc-swiper {
@@ -517,6 +545,20 @@
                          font-size: 22px;
                          line-height: 30px;
                          width: 40%;
+                    }
+                    &.two .titel-swiper {
+                         font-size: 22px;
+                         line-height: 30px;
+                         width: 100%;
+                    }
+                    &.two .desc-swiper {
+                         font-size: 20px;
+                         line-height: 36px;
+                    }
+
+                    .desc{
+                         font-size: 15px;
+                         margin-block: 10px 20px !important;
                     }
 
                     .desc-swiper {

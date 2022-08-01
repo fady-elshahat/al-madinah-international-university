@@ -11,10 +11,10 @@ const swiperHome = new Swiper( "#home .mySwiperHome", {
           nextEl: ".swiper-button.next",
           prevEl: ".swiper-button.prev",
      },
-     autoplay: {
-          delay: 10000,
-          disableOnInteraction: false,
-     },
+     // autoplay: {
+     //      delay: 10000,
+     //      disableOnInteraction: false,
+     // },
 } );
 
 const swiperServices = new Swiper( ".mySwiperServices", {
@@ -97,6 +97,18 @@ statisticsList.forEach( ( el, ) => {
      } )
 } );
 
+// Swiper In Apply
+var swiper = new Swiper(".mySwiper", {
+     spaceBetween: 30,
+     pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+     },
+     autoplay: {
+          delay: 7000,
+          disableOnInteraction: false,
+     },
+});
 // Auto Play Swiper Services
 
 btnAutoPlay.addEventListener( 'click', () => {
@@ -106,6 +118,7 @@ btnAutoPlay.addEventListener( 'click', () => {
           swiperServices.autoplay.stop()
      }
 } )
+
 
 
 
