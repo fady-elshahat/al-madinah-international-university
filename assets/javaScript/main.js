@@ -17,6 +17,19 @@ const swiperHome = new Swiper( "#home .mySwiperHome", {
      // },
 } );
 
+// Swiper In Apply
+var swiperApply = new Swiper( ".mySwiperApply", {
+     spaceBetween: 30,
+     pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+     },
+     autoplay: {
+          delay: 7000,
+          disableOnInteraction: false,
+     },
+} );
+
 const swiperServices = new Swiper( ".mySwiperServices", {
      spaceBetween: 50,
      effect: "fade",
@@ -48,8 +61,20 @@ var swiperMEDIU = new Swiper( ".mySwiperMEDIU", {
           },
      },
 } );
+var swiperMediuTab3 = new Swiper( ".mySwiperMEDIU.tab-3", {
+     spaceBetween: 10,
+     slidesPerView: 4,
+     freeMode: true,
+     watchSlidesProgress: true,
+} );
+var swiperMediuTab32 = new Swiper( ".mySwiperMEDIU-2.tab-3", {
+     spaceBetween: 0,
+     thumbs: {
+          swiper: swiperMediuTab3,
+     },
+} );
 
-var swiper = new Swiper( ".mySwiperAcademics", {
+var swiperAcademics = new Swiper( ".mySwiperAcademics", {
      spaceBetween: 30,
      slidesPerGroup: 2,
      autoplay: {
@@ -90,6 +115,9 @@ var swiper = new Swiper( ".mySwiperAcademics", {
      },
 } );
 
+
+
+
 // Tabs in Services Section
 statisticsList.forEach( ( el, ) => {
      el.addEventListener( 'click', function ( e ) {
@@ -101,18 +129,7 @@ statisticsList.forEach( ( el, ) => {
      } )
 } );
 
-// Swiper In Apply
-var swiper = new Swiper(".mySwiper", {
-     spaceBetween: 30,
-     pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-     },
-     autoplay: {
-          delay: 7000,
-          disableOnInteraction: false,
-     },
-});
+
 // Auto Play Swiper Services
 
 btnAutoPlay.addEventListener( 'click', () => {

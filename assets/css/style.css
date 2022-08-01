@@ -67233,6 +67233,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   height: 225px;
   box-shadow: 0px 0px 40px -10px rgba(105, 99, 99, 0.4);
+  width: 65px;
 }
 #services .btns .swiper-button {
   width: 45px;
@@ -90108,6 +90109,24 @@ textarea.form-control-lg {
   overflow-y: hidden;
   padding: 0 30px;
   display: none;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#mediu-center .tab-small ::-webkit-scrollbar {
+  width: 5px !important;
+}
+#mediu-center .tab-small ::-webkit-scrollbar-track {
+  background: #dbd9d9;
+  width: 5px !important;
+}
+#mediu-center .tab-small ::-webkit-scrollbar-thumb {
+  background: rgb(176, 176, 176);
+  border-radius: 5px;
+  width: 5px !important;
+}
+#mediu-center .tab-small ::-webkit-scrollbar-thumb:hover {
+  background: rgb(156, 156, 156);
 }
 #mediu-center .tab-small .tab-list-small li {
   font-size: 19px;
@@ -90233,7 +90252,70 @@ textarea.form-control-lg {
   width: 80%;
   margin-top: 26px;
 }
-#mediu-center .btn-more {
+#mediu-center .conta-tab-3 {
+  width: 100%;
+}
+#mediu-center .conta-tab-3 .mySwiperMEDIU-2 {
+  width: 80%;
+  height: 100%;
+}
+#mediu-center .conta-tab-3 .mySwiperMEDIU-2 .swiper-slide {
+  background-size: cover;
+  background-position: top center;
+}
+#mediu-center .conta-tab-3 .mySwiperMEDIU-2 .card {
+  bottom: 12%;
+  padding: 46px 20px 30px 33px;
+  display: flex;
+  justify-content: center;
+}
+#mediu-center .conta-tab-3 .mySwiperMEDIU-2 .card .desc {
+  margin-bottom: 0;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 500;
+}
+#mediu-center .conta-tab-3 .mySwiperMEDIU-2 .card span {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 19px;
+  font-weight: 500;
+}
+#mediu-center .conta-tab-3 .mySwiperMEDIU-2 .card a {
+  color: #ED1A3B;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+#mediu-center .conta-tab-3 .mySwiperMEDIU-2 .card a::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: rgba(112, 112, 112, 0.2);
+  right: -100%;
+  top: 12px;
+}
+#mediu-center .mySwiperMEDIU.tab-3 {
+  height: 100%;
+}
+#mediu-center .mySwiperMEDIU.tab-3 .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+}
+#mediu-center .mySwiperMEDIU.tab-3 .swiper-wrapper .swiper-slide {
+  width: 93% !important;
+  height: 20%;
+  margin: 0 auto;
+  background-position: top center;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+.btn-more {
   padding: 0px 20px;
   background-color: #FFDD00;
   color: #000000;
@@ -90242,16 +90324,17 @@ textarea.form-control-lg {
   line-height: 40px;
   font-weight: 500;
 }
-#mediu-center .btn-more:hover {
+.btn-more:hover {
   border-color: transparent;
 }
-#mediu-center .btns {
+
+.btns {
   position: absolute;
   right: 40px;
   top: -75px;
   z-index: 333;
 }
-#mediu-center .btns .swiper-button {
+.btns .swiper-button {
   width: 45px;
   height: 45px;
   background-color: #FFFFFF;
@@ -90262,16 +90345,16 @@ textarea.form-control-lg {
   align-items: center;
   color: #FFFFFF;
 }
-#mediu-center .btns .swiper-button.next {
+.btns .swiper-button.next {
   background-color: #ED1A3B;
   border-radius: 50%;
 }
-#mediu-center .btns .swiper-button.prev {
+.btns .swiper-button.prev {
   background-color: #ED1A3B;
   border-radius: 50%;
   margin-right: 30px;
 }
-#mediu-center .btns .swiper-button.swiper-button-disabled {
+.btns .swiper-button.swiper-button-disabled {
   border: 1px solid #999;
   color: #999;
   background-color: #FFFFFF;
@@ -90281,6 +90364,12 @@ textarea.form-control-lg {
   #mediu-center .mySwiperMEDIU .swiper-slide {
     width: 36%;
   }
+  #mediu-center .conta-tab-3 {
+    height: 600px;
+  }
+  #mediu-center .conta-tab-3 .mySwiperMEDIU-2 {
+    height: 89%;
+  }
 }
 @media (min-width: 1480px) and (max-width: 1649px) {
   #mediu-center .title::before {
@@ -90288,6 +90377,12 @@ textarea.form-control-lg {
   }
   #mediu-center .mySwiperMEDIU .swiper-slide {
     width: 43%;
+  }
+  #mediu-center .conta-tab-3 {
+    height: 600px;
+  }
+  #mediu-center .conta-tab-3 .mySwiperMEDIU-2 {
+    height: 89%;
   }
 }
 @media (min-width: 1280px) and (max-width: 1480px) {
@@ -90313,6 +90408,12 @@ textarea.form-control-lg {
     margin-top: 10px;
     line-height: 25px;
   }
+  #mediu-center .conta-tab-3 {
+    height: 446px;
+  }
+  #mediu-center .conta-tab-3 .mySwiperMEDIU-2 {
+    height: 89%;
+  }
 }
 @media (min-width: 1140px) and (max-width: 1279px) {
   #mediu-center .title::before {
@@ -90336,6 +90437,15 @@ textarea.form-control-lg {
     font-size: 16px;
     margin-top: 10px;
     line-height: 20px;
+  }
+  #mediu-center .conta-tab-3 {
+    height: 446px;
+  }
+  #mediu-center .conta-tab-3 .mySwiperMEDIU-2 {
+    height: 89%;
+  }
+  #mediu-center .btn-more {
+    margin: 100px auto 0;
   }
 }
 @media (max-width: 1140px) {
@@ -90369,7 +90479,7 @@ textarea.form-control-lg {
   }
   #mediu-center .btn-more {
     display: block;
-    margin: 0 auto;
+    margin: 100px auto 0;
   }
   #mediu-center .btns {
     position: static;
@@ -90380,6 +90490,25 @@ textarea.form-control-lg {
     width: 30px;
     height: 30px;
     font-size: 14px;
+  }
+  #mediu-center .conta-tab-3 {
+    height: 550px;
+    display: block !important;
+    padding-inline: 30px;
+  }
+  #mediu-center .conta-tab-3 .mySwiperMEDIU-2 {
+    width: 100%;
+    height: 89%;
+  }
+  #mediu-center .conta-tab-3 .mySwiperMEDIU.tab-3 {
+    margin-block-start: 20px;
+  }
+  #mediu-center .conta-tab-3 .mySwiperMEDIU.tab-3 .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 25%;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 992px) {
