@@ -1,11 +1,11 @@
-const statisticsList = document.querySelectorAll( ".services-list li" )
-const serviceCard = document.querySelectorAll( ".service-card" )
-const btnAutoPlay = document.querySelector( '.swiper-button.auto' )
+const statisticsList = document.querySelectorAll(".services-list li")
+const serviceCard = document.querySelectorAll(".service-card")
+const btnAutoPlay = document.querySelector('.swiper-button.auto')
 
 
 // Swiper Js
 
-const swiperHome = new Swiper( "#home .mySwiperHome", {
+const swiperHome = new Swiper("#home .mySwiperHome", {
 
      navigation: {
           nextEl: ".swiper-button.next",
@@ -15,26 +15,26 @@ const swiperHome = new Swiper( "#home .mySwiperHome", {
      //      delay: 10000,
      //      disableOnInteraction: false,
      // },
-} );
+});
 
-const swiperServices = new Swiper( ".mySwiperServices", {
+const swiperServices = new Swiper(".mySwiperServices", {
      spaceBetween: 50,
      effect: "fade",
      navigation: {
           nextEl: "#services .swiper-button.next",
           prevEl: "#services .swiper-button.prev",
      },
-} );
-var swiperMEDIU = new Swiper( ".mySwiperMEDIU", {
+});
+var swiperMEDIU = new Swiper(".mySwiperMEDIU", {
      slidesPerView: "auto",
      spaceBetween: 0,
      navigation: {
           nextEl: "#mediu-center .swiper-button.next",
           prevEl: "#mediu-center .swiper-button.prev",
      },
-} );
+});
 
-var swiper = new Swiper( ".mySwiperAcademics", {
+var swiper = new Swiper(".mySwiperAcademics", {
      spaceBetween: 30,
      slidesPerGroup: 2,
      autoplay: {
@@ -51,33 +51,35 @@ var swiper = new Swiper( ".mySwiperAcademics", {
                spaceBetween: 30,
           },
      },
-} );
+});
 
 // Tabs in Services Section
-statisticsList.forEach( ( el, ) => {
-     el.addEventListener( 'click', function ( e ) {
-          statisticsList.forEach( el => {
-               el.classList.remove( 'active' )
-          } )
-          this.classList.add( 'active' )
+statisticsList.forEach((el,) => {
+     el.addEventListener('click', function (e) {
+          statisticsList.forEach(el => {
+               el.classList.remove('active')
+          })
+          this.classList.add('active')
           e.preventDefault()
-     } )
-} );
+     })
+});
 
 // Auto Play Swiper Services
 
-btnAutoPlay.addEventListener( 'click', () => {
-     if ( swiperServices.autoplay.running == false ) {
+btnAutoPlay.addEventListener('click', () => {
+     if (swiperServices.autoplay.running == false) {
           swiperServices.autoplay.start()
      } else {
           swiperServices.autoplay.stop()
      }
-} )
+})
 
 
 
-
-
-
-
-
+var swiper = new Swiper(".mySwiper", {
+     spaceBetween: 30,
+     pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+     },
+});

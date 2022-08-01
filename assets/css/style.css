@@ -55180,6 +55180,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.res-one-apply,
+.res-two-apply {
+  display: none;
+}
+
 .apply {
   background-color: white;
   z-index: 888888;
@@ -55230,6 +55235,9 @@ textarea.form-control-lg {
 .apply .apply-box:hover {
   box-shadow: 0px 0px 40px -10px rgba(105, 99, 99, 0.4);
   transform: scale(1.1);
+}
+.apply .apply-box:hover .applyNow span {
+  opacity: 0;
 }
 .apply .apply-box:hover .apply-now-button {
   opacity: 1;
@@ -55283,14 +55291,19 @@ textarea.form-control-lg {
   font-weight: 400;
   font-size: 23px;
 }
-.apply .apply-box .apply-content::after {
-  content: "";
-  position: absolute;
+.apply .apply-box .applyNow {
+  text-align: center;
+}
+.apply .apply-box .applyNow span {
+  display: block;
   width: 40px;
-  height: 1px;
-  bottom: 8px;
-  left: 0;
+  height: 2px;
   background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-right: 20px;
+  position: absolute;
+  left: -20px;
+  opacity: 1;
 }
 .apply .apply-box .applyNow > button {
   padding: 0px 20px;
@@ -55310,7 +55323,6 @@ textarea.form-control-lg {
 .apply .apply-box .applyNow > button a {
   text-decoration: none;
   color: #000000;
-  padding: 7px 40px;
 }
 .apply .apply-box .applyNow > button::after {
   content: "";
@@ -55329,6 +55341,278 @@ textarea.form-control-lg {
   transition: 2s all;
 }
 
+@media (min-width: 992px) and (max-width: 1479px) {
+  .apply .contact {
+    display: none !important;
+  }
+  .apply .contact-2 {
+    display: flex !important;
+    background-color: #FFDD00;
+    padding: 20px;
+    width: fit-content;
+    text-decoration: none;
+    color: #000000;
+    padding: 20px 40px;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+  }
+  .apply .contact-2 p {
+    display: inline-block;
+  }
+  .apply .contact-2 i {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1105px) {
+  .apply .apply-content-p1 {
+    font-size: 14px !important;
+  }
+  .apply .apply-content-p2 {
+    font-size: 18px !important;
+  }
+  .apply .applyNow a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 770px) and (max-width: 992px) {
+  .apply {
+    display: none;
+  }
+  .res-one-apply {
+    display: block;
+    padding: 30px 0;
+  }
+  .res-one-apply h5, .res-one-apply .h5 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .res-one-apply .swiper-wrapper {
+    height: 250px;
+  }
+  .res-one-apply .counter {
+    display: inline-block;
+    width: 52.5px;
+    height: 49.5px;
+    position: relative;
+    margin-right: 15.5px;
+    font-size: 20px;
+  }
+  .res-one-apply .counter::after {
+    content: "";
+    position: absolute;
+    bottom: 21.25px;
+    left: 5px;
+    width: 52.5px;
+    height: 1px;
+    background-color: #707070;
+    transform: rotate(-40deg);
+  }
+  .res-one-apply .contain {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: fit-content;
+    transition: 0.5s;
+  }
+  .res-one-apply .contain:hover {
+    box-shadow: 0px 0px 40px -10px rgba(105, 99, 99, 0.4);
+    transform: scale(1.1);
+  }
+  .res-one-apply .contain:hover .icon span {
+    opacity: 0;
+  }
+  .res-one-apply .contain:hover .apply-now-button {
+    opacity: 1;
+  }
+  .res-one-apply .contain .applyNow {
+    text-align: center;
+  }
+  .res-one-apply .contain .applyNow > button {
+    padding: 0px 20px;
+    background-color: #FFDD00;
+    color: #000000;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 500;
+    border: none;
+    margin-inline-end: 50px;
+    margin-inline-end: 50px;
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+  }
+  .res-one-apply .contain .applyNow > button a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .res-one-apply .contain .applyNow > button::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    bottom: 50%;
+    right: -50px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .res-one-apply .col-md-6:last-child .contain {
+    justify-content: flex-end;
+  }
+  .res-one-apply h5, .res-one-apply .h5 {
+    margin-bottom: 20px;
+  }
+  .res-one-apply .box {
+    width: fit-content;
+  }
+  .res-one-apply .box .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .res-one-apply .box .icon span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: -2222;
+    opacity: 1;
+  }
+  .res-one-apply .box .p-1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #434343;
+    margin-block: 0;
+  }
+  .res-one-apply .box .p-2 {
+    font-weight: 600;
+    font-size: 23px;
+    margin-block: 0;
+  }
+  .res-one-apply .swiper-pagination {
+    padding-top: 50px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: black;
+  }
+}
+@media (max-width: 770px) {
+  .apply {
+    display: none;
+  }
+  .res-two-apply {
+    display: block;
+    padding: 30px 0;
+  }
+  .res-two-apply .heading {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .res-two-apply h5, .res-two-apply .h5 {
+    font-size: 30px;
+  }
+  .res-two-apply .swiper-wrapper {
+    height: 450px;
+  }
+  .res-two-apply .counter {
+    display: inline-block;
+    width: 52.5px;
+    height: 49.5px;
+    position: relative;
+    margin-right: 15.5px;
+    font-size: 20px;
+  }
+  .res-two-apply .counter::after {
+    content: "";
+    position: absolute;
+    bottom: 21.25px;
+    left: 5px;
+    width: 52.5px;
+    height: 1px;
+    background-color: #707070;
+    transform: rotate(-40deg);
+  }
+  .res-two-apply .contain {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    padding: 20px;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  .res-two-apply .contain:hover {
+    box-shadow: 0px 0px 40px -10px rgba(105, 99, 99, 0.4);
+    transform: scale(1.1);
+  }
+  .res-two-apply .contain:hover .icon span {
+    opacity: 0;
+  }
+  .res-two-apply .contain:hover .apply-now-button {
+    opacity: 1;
+  }
+  .res-two-apply .contain .applyNow {
+    text-align: center;
+  }
+  .res-two-apply .contain .applyNow > button {
+    padding: 0px 20px;
+    background-color: #FFDD00;
+    color: #000000;
+    border-radius: 50px;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 500;
+    border: none;
+    margin-inline-end: 50px;
+    margin-inline-end: 50px;
+    position: relative;
+    opacity: 0;
+    transition: 1s;
+  }
+  .res-two-apply .contain .applyNow > button a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .res-two-apply .contain .applyNow > button::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    bottom: 50%;
+    right: -50px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .res-two-apply .box .icon {
+    display: flex;
+    align-items: center;
+  }
+  .res-two-apply .box .icon span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-right: 20px;
+    position: absolute;
+  }
+  .res-two-apply .box .p-1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #434343;
+    margin-block: 0;
+  }
+  .res-two-apply .box .p-2 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-block: 0;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: black;
+  }
+}
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
