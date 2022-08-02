@@ -5,6 +5,8 @@ const tabsMediu = document.querySelectorAll( '.tabs .item' );
 const tabsMediuArray = Array.from( tabsMediu )
 const tabsMediuContent = document.querySelectorAll( '#mediu-center .tab-mediu-content' );
 const tabsContentMediuArray = Array.from( tabsMediuContent )
+const tabsSmallMediu = document.querySelectorAll( '.tab-small .tab-list-small li' );
+const tabsSmallMediuArray = Array.from( tabsSmallMediu )
 
 
 // Swiper Js
@@ -175,6 +177,20 @@ tabsMediuArray.forEach( element => {
 
      } )
 } )
+tabsSmallMediuArray.forEach( element => {
+     element.addEventListener( 'click', ( e ) => {
+          tabsSmallMediuArray.forEach( ( el ) => {
+               el.classList.remove( "activ" );
+          } )
+          e.currentTarget.classList.add( "activ" )
+          tabsContentMediuArray.forEach( ( div ) => {
+               div.style.display = "none"
+          } )
+          document.querySelector( e.currentTarget.dataset.tab ).style.display = "block"
+
+     } )
+} )
+
 
 
 
