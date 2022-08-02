@@ -2,6 +2,10 @@
 
 
 .navbar {
+     .dropdown-menu {
+          left: -80% !important;
+     }
+
      background-color: transparent;
      z-index: 4;
      width: 100%;
@@ -39,11 +43,12 @@
      }
 }
 
-@media (min-width: 1650px) and (max-width: 1809px) {
+// (max-width: 1809px)
+@media (min-width: 1650px) and (max-width: 2045px) {
      .navbar {
           .navbar-collapse {
                justify-content: center;
-               margin-inline-end: 20%;
+               margin-inline-end: 30%;
           }
      }
 }
@@ -53,11 +58,39 @@
      .navbar {
           .navbar-collapse {
                justify-content: center;
-               margin-inline-end: 20%;
+               margin-inline-end: 45%;
+
+               .nav-item {
+                    margin-inline: 2px !important;
+               }
+
+               .nav-link {
+                    padding-inline: 0;
+               }
           }
      }
 }
 
+
+
+
+
+@media (min-width: 1320px) and (max-width: 1380px) {
+     .navbar-collapse {
+          justify-content: center;
+          margin-inline-end: 50%;
+
+          .nav-item {
+               margin-inline: 5px;
+
+          }
+     }
+
+     .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+          padding-inline: 0;
+          font-size: 15px;
+     }
+}
 
 @media (min-width: 1320px) and (max-width: 1480px) {
      .navbar {
@@ -66,27 +99,35 @@
                margin-inline-start: 20px;
 
                .navbar-nav {
+                    .nav-item {
+                         margin-inline: 4px;
+                    }
+
                     .nav-link {
                          padding-inline: 0;
+                         font-size: 14px;
                     }
                }
           }
      }
 }
 
+
 @media (min-width: 1140px) and (max-width: 1319px) {
      .navbar {
           .container {
-               max-width: 1200px;
+               max-width: 1300px;
 
                .navbar-collapse {
                     margin-inline-start: 0;
 
                     .navbar-nav {
                          .nav-item {
+                              margin-inline: 3px;
+
                               .nav-link {
                                    padding-inline: 0;
-                                   font-size: 15px;
+                                   font-size: 14px;
                               }
                          }
 
@@ -94,6 +135,31 @@
                }
           }
      }
+}
+
+@media (min-width: 1140px) and (max-width: 1190px) {
+     .navbar {
+          .container {
+               max-width: 1300px;
+
+               .navbar-collapse {
+                    margin-inline-start: 0;
+
+                    .navbar-nav {
+                         .nav-item {
+                              margin-inline: 2px;
+
+                              .nav-link {
+                                   padding-inline: 0 !important;
+                                   font-size: 13px;
+                              }
+                         }
+
+                    }
+               }
+          }
+     }
+
 }
 
 @media (min-width: 992px) and (max-width: 1139px) {
@@ -107,9 +173,11 @@
 
                     .navbar-nav {
                          .nav-item {
+                              margin-inline: 4px;
+
                               .nav-link {
                                    padding-inline: 0;
-                                   font-size: 15px;
+                                   font-size: 14px;
                               }
                          }
 

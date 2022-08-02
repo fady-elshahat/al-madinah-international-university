@@ -228,6 +228,10 @@
 @media (max-width: 780px) {
 
   #academics {
+    .container-fluid {
+      padding: 0;
+      padding-inline-start: 25px;
+    }
     h2 {
       font-size: 40px;
       margin: 15px auto;

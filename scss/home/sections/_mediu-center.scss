@@ -321,6 +321,9 @@
 
 @media (max-width: 1140px) {
      #mediu-center {
+          .container-fluid {
+               padding-inline-start: 15px !important;
+          }
           .title {
                font-size: 60px;
 
@@ -335,6 +338,7 @@
 
           .tab-small {
                display: block;
+               padding: 0;
           }
 
           .col-md-9 {
