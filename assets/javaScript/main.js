@@ -1,12 +1,24 @@
 const statisticsList = document.querySelectorAll( ".services-list li" )
 const serviceCard = document.querySelectorAll( ".service-card" )
 const btnAutoPlay = document.querySelector( '.swiper-button.auto' )
+
+// Var Tabs Mediu
 const tabsMediu = document.querySelectorAll( '.tabs .item' );
 const tabsMediuArray = Array.from( tabsMediu )
 const tabsMediuContent = document.querySelectorAll( '#mediu-center .tab-mediu-content' );
 const tabsContentMediuArray = Array.from( tabsMediuContent )
-const tabsSmallMediu = document.querySelectorAll( '.tab-small .tab-list-small li' );
+const tabsSmallMediu = document.querySelectorAll( '#mediu-center .tab-small  li' );
 const tabsSmallMediuArray = Array.from( tabsSmallMediu )
+
+// Var Tabs Services
+const tabsServices = document.querySelectorAll( '.services-list li' );
+const tabsServicesArray = Array.from( tabsServices )
+
+const tabsSmallServices = document.querySelectorAll( '#services .tab-small .tab-list-small li' );
+const tabsSmallServicesArray = Array.from( tabsSmallServices )
+
+const tabsServicesContent = document.querySelectorAll( '#services .tab-services-content' );
+const tabsContentServicesArray = Array.from( tabsServicesContent )
 
 
 // Swiper Js
@@ -191,19 +203,36 @@ tabsSmallMediuArray.forEach( element => {
      } )
 } )
 
-
-
-
 // Tabs in Services Section
-statisticsList.forEach( ( el, ) => {
-     el.addEventListener( 'click', function ( e ) {
-          statisticsList.forEach( el => {
-               el.classList.remove( 'active' )
-          } )
-          this.classList.add( 'active' )
+tabsServicesArray.forEach( element => {
+     element.addEventListener( 'click', ( e ) => {
           e.preventDefault()
+          tabsServicesArray.forEach( ( el ) => {
+               el.classList.remove( "active" );
+          } )
+          e.currentTarget.classList.add( "active" )
+          tabsContentServicesArray.forEach( ( div ) => {
+               div.style.display = "none"
+          } )
+          document.querySelector( e.currentTarget.dataset.tabservices ).style.display = "block"
+
      } )
-} );
+} )
+
+tabsSmallServicesArray.forEach( element => {
+     element.addEventListener( 'click', ( e ) => {
+          e.preventDefault()
+          tabsSmallServicesArray.forEach( ( el ) => {
+               el.classList.remove( "active" );
+          } )
+          e.currentTarget.classList.add( "active" )
+          tabsContentServicesArray.forEach( ( div ) => {
+               div.style.display = "none"
+          } )
+          document.querySelector( e.currentTarget.dataset.tabservices ).style.display = "block"
+
+     } )
+} )
 
 
 

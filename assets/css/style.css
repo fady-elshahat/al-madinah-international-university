@@ -67112,6 +67112,7 @@ textarea.form-control-lg {
   height: 50px;
   position: relative;
   margin-inline: 20px;
+  cursor: pointer;
 }
 #services .tab-small .tab-list-small li.activ {
   color: #ED1A3B;
@@ -67146,6 +67147,12 @@ textarea.form-control-lg {
 }
 #services .tab-small .tab-list-small li:hover::after {
   content: "";
+}
+#services .tab-services-content {
+  display: none;
+}
+#services .tab-services-content.Staff {
+  display: block;
 }
 #services .conta-slider {
   height: 780px;
@@ -67197,7 +67204,7 @@ textarea.form-control-lg {
 }
 #services .services-list li {
   position: relative;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   transition: 0.5s;
   text-align: left;
@@ -67375,10 +67382,10 @@ textarea.form-control-lg {
     margin-inline-start: 15px;
   }
   #services .services-list li {
-    font-size: 18px;
+    font-size: 16px;
   }
   #services .services-list li.active a {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 1499px) {
@@ -67460,7 +67467,7 @@ textarea.form-control-lg {
     font-size: 20px;
   }
   #services .services-list li {
-    font-size: 16px;
+    font-size: 15px;
   }
   #services .services-list li a {
     margin-inline-end: 10px;
@@ -67486,7 +67493,7 @@ textarea.form-control-lg {
     font-size: 100px;
   }
   #services .statistics-list li .statistics-tiltle {
-    font-size: 18px;
+    font-size: 15px;
   }
   #services .statistics-list li span {
     font-size: 35px;

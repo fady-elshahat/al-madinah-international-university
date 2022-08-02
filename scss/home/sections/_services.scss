@@ -52,6 +52,7 @@
         height: 50px;
         position: relative;
         margin-inline: 20px;
+        cursor: pointer;
 
         &.activ {
           color: $font-secondary;
@@ -80,6 +81,14 @@
           }
         }
       }
+    }
+  }
+
+  .tab-services-content {
+    display: none;
+
+    &.Staff {
+      display: block;
     }
   }
 
@@ -140,7 +149,7 @@
 
     li {
       position: relative;
-      font-size: 20px;
+      font-size: 15px;
       font-weight: 400;
       transition: 0.5s;
       text-align: left;
@@ -341,10 +350,10 @@
 
     .services-list {
       li {
-        font-size: 18px;
+        font-size: 16px;
 
         &.active a {
-          font-size: 20px;
+          font-size: 18px;
         }
       }
     }
@@ -467,7 +476,7 @@
 
     .services-list {
       li {
-        font-size: 16px;
+        font-size: 15px;
 
         a {
           margin-inline-end: 10px;
@@ -507,7 +516,7 @@
 
       li {
         .statistics-tiltle {
-          font-size: 18px;
+          font-size: 15px;
         }
 
         span {
