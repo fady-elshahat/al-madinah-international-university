@@ -49,6 +49,36 @@ var swiperMEDIU = new Swiper( ".mySwiperMEDIU", {
      },
 } );
 
+var swiper = new Swiper( ".mySwiperMediuTab4", {
+     spaceBetween: 30,
+     slidesPerGroup: 2,
+     autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+     },
+     breakpoints: {
+
+          1020: {
+               slidesPerView: 3,
+               spaceBetween: 15,
+          },
+          992: {
+               slidesPerView: 2.5,
+               spaceBetween: 15,
+          },
+          780: {
+               slidesPerView: 2.5,
+               spaceBetween: 15,
+          },
+          400: {
+               slidesPerView: 1.5,
+               spaceBetween: 15,
+          },
+
+
+     },
+} );
+
 var swiper = new Swiper( ".mySwiperAcademics", {
      spaceBetween: 30,
      slidesPerGroup: 2,
@@ -125,7 +155,7 @@ btnAutoPlay.addEventListener( 'click', () => {
 
 
 
-
+// mySwiperMediuTab2
 
 
 
