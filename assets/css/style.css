@@ -21551,6 +21551,27 @@ textarea.form-control-lg {
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   padding: 10px 15px 0 15px;
+  left: 2% !important;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu.lang {
+  left: -80% !important;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu.lang span::after {
+  left: 63px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 99% !important;
+  top: 0;
+  background-color: #F3EFE5;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-submenu-left {
+  right: 100%;
+  left: auto;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu > li:hover > .dropdown-submenu.show {
+  display: block;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
   border-bottom: 1px solid rgba(112, 112, 112, 0.1);
@@ -21573,7 +21594,7 @@ textarea.form-control-lg {
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu span::after {
   content: " ";
-  width: 70px;
+  width: 80px;
   background-color: #FFDD00;
   height: 11px;
   position: absolute;
@@ -55548,32 +55569,11 @@ textarea.form-control-lg {
   background-color: white;
   z-index: 888888;
   transform: translateY(-30px);
-  position: relative;
   padding-block-start: 29px;
   border-radius: 25px 25px 0 0;
 }
 .apply p {
   margin-bottom: 0;
-}
-.apply .contact {
-  background-color: #FFDD00;
-  width: fit-content;
-  padding: 20px 40px;
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 10px 10px 0 0;
-  transform: rotate(-90deg) translateX(35%);
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform-origin: bottom right;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-.apply .contact i {
-  margin-right: 25px;
-  transform: rotate(90deg);
 }
 .apply h5, .apply .h5 {
   font-size: 32px;
@@ -55698,6 +55698,31 @@ textarea.form-control-lg {
 
 .apply-now-button {
   transition: 2s all;
+}
+
+.contact {
+  background-color: #FFDD00;
+  width: fit-content;
+  padding: 20px 40px;
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 10px 10px 0 0;
+  transform: rotate(-90deg) translateX(35%);
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  transform-origin: bottom right;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  z-index: 33333333;
+}
+.contact p {
+  margin-bottom: 0;
+}
+.contact i {
+  margin-right: 25px;
+  transform: rotate(90deg);
 }
 
 @media (min-width: 992px) and (max-width: 1479px) {

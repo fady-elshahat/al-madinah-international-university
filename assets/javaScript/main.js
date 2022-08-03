@@ -164,9 +164,13 @@ var swiper = new Swiper( ".mySwiper", {
           disableOnInteraction: false,
      },
 } );
+
+
+
 // Auto Play Swiper Services
 
-btnAutoPlay.addEventListener( 'click', () => {
+btnAutoPlay.addEventListener( 'click', ( e ) => {
+     console.log( swiperServices, e );
      if ( swiperServices.autoplay.running == false ) {
           swiperServices.autoplay.start()
      } else {
@@ -235,16 +239,16 @@ tabsSmallServicesArray.forEach( element => {
 } )
 
 
-const searchBox = document.querySelector('.search-box');
-const searchIcon= document.getElementById('search-icon');
-const closeSearch =document.getElementById('close-search'); 
+const searchBox = document.querySelector( '.search-box' );
+const searchIcon = document.getElementById( 'search-icon' );
+const closeSearch = document.getElementById( 'close-search' );
 
-searchIcon.addEventListener('click' , ()=>{
-     searchBox.classList.toggle('fade');
-})
-closeSearch.addEventListener(('click') , ()=>{
-     searchBox.classList.remove('fade')
-})
+searchIcon.addEventListener( 'click', () => {
+     searchBox.classList.toggle( 'fade' );
+} )
+closeSearch.addEventListener( ( 'click' ), () => {
+     searchBox.classList.remove( 'fade' )
+} )
 
 
 

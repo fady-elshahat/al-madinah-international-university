@@ -5,11 +5,11 @@
 .res-two-apply {
   display: none;
 }
+
 .apply {
   background-color: white;
   z-index: 888888;
   transform: translateY(-30px);
-  position: relative;
   padding-block-start: 29px;
   border-radius: 25px 25px 0 0;
 
@@ -17,27 +17,6 @@
     margin-bottom: 0;
   }
 
-  .contact {
-    background-color: $font-primary;
-    width: fit-content;
-    padding: 20px 40px;
-    font-size: 25px;
-    font-weight: 400;
-    border-radius: 10px 10px 0 0;
-    transform: rotate(-90deg) translateX(35%);
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform-origin: bottom right;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-
-    i {
-      margin-right: 25px;
-      transform: rotate(90deg);
-    }
-  }
 
   h5 {
     font-size: 32px;
@@ -60,9 +39,11 @@
     &:hover {
       box-shadow: $box-shadow;
       transform: scale(1.1);
+
       .applyNow span {
         opacity: 0;
       }
+
       .apply-now-button {
         opacity: 1;
       }
@@ -111,6 +92,7 @@
 
     .applyNow {
       text-align: center;
+
       span {
         display: block;
         width: 40px;
@@ -160,6 +142,32 @@
   transition: 2s all;
 }
 
+.contact {
+  background-color: $font-primary;
+  width: fit-content;
+  padding: 20px 40px;
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 10px 10px 0 0;
+  transform: rotate(-90deg) translateX(35%);
+  position: fixed;
+  bottom: 20%;
+  right: 0;
+  transform-origin: bottom right;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  z-index: 33333333;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  i {
+    margin-right: 25px;
+    transform: rotate(90deg);
+  }
+}
 
 //Responsive
 @media (min-width: 992px) and (max-width: 1479px) {
@@ -167,6 +175,7 @@
     .contact {
       display: none !important;
     }
+
     .contact-2 {
       display: flex !important;
       background-color: $font-primary;
@@ -181,9 +190,11 @@
       position: absolute;
       top: 0;
       right: 30px;
+
       p {
         display: inline-block;
       }
+
       i {
         margin-right: 10px;
       }
@@ -196,9 +207,11 @@
     .apply-content-p1 {
       font-size: 14px !important;
     }
+
     .apply-content-p2 {
       font-size: 18px !important;
     }
+
     .applyNow a {
       font-size: 10px;
     }
@@ -239,18 +252,23 @@
       padding: 20px;
       width: fit-content;
       transition: 0.5s;
+
       &:hover {
         box-shadow: $box-shadow;
         transform: scale(1.1);
+
         .icon span {
           opacity: 0;
         }
+
         .apply-now-button {
           opacity: 1;
         }
       }
+
       .applyNow {
         text-align: center;
+
         &>button {
           @include btnYallow;
           border: none;
@@ -259,11 +277,12 @@
           position: relative;
           opacity: 0;
           transition: 1s;
-  
+
           a {
             text-decoration: none;
             color: $font-text;
           }
+
           &::after {
             content: '';
             position: absolute;
@@ -273,7 +292,7 @@
             right: -50px;
             background-color: rgba($color: $font-text, $alpha: 0.1);
           }
-  
+
         }
       }
     }
@@ -289,7 +308,7 @@
     .box {
       width: fit-content;
 
-      
+
       .icon {
         display: flex;
         justify-content: space-between;
@@ -324,6 +343,7 @@
       padding-top: 50px;
     }
   }
+
   .swiper-pagination-bullet-active {
     background-color: black;
   }
@@ -367,18 +387,23 @@
       padding: 20px;
       justify-content: center;
       transition: 0.5s;
+
       &:hover {
         box-shadow: $box-shadow;
         transform: scale(1.1);
+
         .icon span {
           opacity: 0;
         }
+
         .apply-now-button {
           opacity: 1;
         }
       }
+
       .applyNow {
         text-align: center;
+
         &>button {
           @include btnYallow;
           border: none;
@@ -387,11 +412,12 @@
           position: relative;
           opacity: 0;
           transition: 1s;
-  
+
           a {
             text-decoration: none;
             color: $font-text;
           }
+
           &::after {
             content: '';
             position: absolute;
@@ -401,7 +427,7 @@
             right: -50px;
             background-color: rgba($color: $font-text, $alpha: 0.1);
           }
-  
+
         }
       }
     }
@@ -438,8 +464,8 @@
     }
 
   }
+
   .swiper-pagination-bullet-active {
     background-color: black;
   }
 }
-
