@@ -194,16 +194,33 @@ tabsSmallMediuArray.forEach( element => {
 
 
 
-// Tabs in Services Section
-statisticsList.forEach( ( el, ) => {
-     el.addEventListener( 'click', function ( e ) {
-          statisticsList.forEach( el => {
-               el.classList.remove( 'active' )
-          } )
-          this.classList.add( 'active' )
-          e.preventDefault()
-     } )
-} );
+
+
+ 
+const searchBox = document.querySelector('.search-box');
+const searchIcon= document.getElementById('search-icon');
+const closeSearch =document.getElementById('close-search'); 
+
+searchIcon.addEventListener('click' , ()=>{
+     searchBox.classList.toggle('fade');
+})
+closeSearch.addEventListener(('click') , ()=>{
+     searchBox.classList.remove('fade')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
