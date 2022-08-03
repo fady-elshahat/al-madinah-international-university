@@ -55724,6 +55724,9 @@ textarea.form-control-lg {
   margin-right: 25px;
   transform: rotate(90deg);
 }
+.contact:hover {
+  color: #000000;
+}
 
 @media (min-width: 992px) and (max-width: 1479px) {
   .apply .contact {

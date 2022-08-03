@@ -167,6 +167,10 @@
     margin-right: 25px;
     transform: rotate(90deg);
   }
+
+  &:hover {
+    color: $font-text;
+  }
 }
 
 //Responsive
