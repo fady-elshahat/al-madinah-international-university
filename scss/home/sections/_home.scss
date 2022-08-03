@@ -252,7 +252,8 @@
                width: 45px;
                height: 45px;
                border: 1px solid $font-primary;
-               @include flexCentar
+               @include flexCentar;
+               cursor: pointer;
           }
 
           .social-media {

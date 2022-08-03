@@ -32989,6 +32989,7 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 #home .icons-side .social-media {
   padding-block-end: 50px;
@@ -101866,6 +101867,7 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 @media (max-width: 1310px) {
