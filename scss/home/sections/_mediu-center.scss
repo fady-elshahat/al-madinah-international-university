@@ -297,7 +297,14 @@
 
      .tab-mediu-content {
           display: none;
-
+          .btn-more {
+               @include btnYallow;
+          
+               &:hover {
+                    border-color: transparent;
+               }
+          }
+          
           &.News {
                display: block;
           }
@@ -402,16 +409,6 @@
 }
 
 
-
-
-
-.btn-more {
-     @include btnYallow;
-
-     &:hover {
-          border-color: transparent;
-     }
-}
 
 .btns {
      position: absolute;

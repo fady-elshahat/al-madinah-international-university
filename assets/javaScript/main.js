@@ -235,6 +235,16 @@ tabsSmallServicesArray.forEach( element => {
 } )
 
 
+const searchBox = document.querySelector('.search-box');
+const searchIcon= document.getElementById('search-icon');
+const closeSearch =document.getElementById('close-search'); 
+
+searchIcon.addEventListener('click' , ()=>{
+     searchBox.classList.toggle('fade');
+})
+closeSearch.addEventListener(('click') , ()=>{
+     searchBox.classList.remove('fade')
+})
 
 
 

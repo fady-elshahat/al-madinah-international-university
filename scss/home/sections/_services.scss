@@ -146,7 +146,7 @@
     overflow-x: hidden;
     direction: rtl;
     padding: 0;
-
+    margin-block-start: 50px;
     li {
       position: relative;
       font-size: 15px;
@@ -156,7 +156,7 @@
       margin-inline-end: 60px;
 
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
       }
 
       &::before {
