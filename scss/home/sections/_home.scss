@@ -4,7 +4,8 @@
      overflow-x: hidden;
      height: 740px;
 
-     .mySwiperHome {
+     .mySwiperHome,
+     .mySwiperHome3 {
           position: relative;
           height: 100%;
 
@@ -386,7 +387,8 @@
           .mySwiperHome {
                .content-swiper {
                     width: 80%;
-                    &.three{
+
+                    &.three {
                          width: 100%;
                     }
                }
@@ -432,23 +434,27 @@
                     &.two .desc-swiper {
                          font-size: 27px;
                     }
-                    &.three{
-                         .titel-swiper{
+
+                    &.three {
+                         .titel-swiper {
                               margin-bottom: 20px !important;
                          }
-                         .number{
-                              font-size: 35px;
-                         }
-                         .content{
-                              span {
-                                   font-size: 22px;
-                                   font-weight: 400;
-                               }
-                               p{
-                                   font-size: 22px;
 
-                               }
-                         } 
+                         .number {
+                              font-size: 30px;
+                         }
+
+                         .content {
+                              span {
+                                   font-size: 20px;
+                                   font-weight: 400;
+                              }
+
+                              p {
+                                   font-size: 19px;
+
+                              }
+                         }
                     }
                }
 
@@ -483,6 +489,33 @@
 
 @media (max-width: 768px) {
      #home {
+          .desc {
+               i {
+                    font-size: 16px !important;
+               }
+          }
+          .btn-join,
+          .btn-view {
+               padding: 10px !important;
+               font-size: 12px !important;
+          }
+          .titel-swiper {
+               width: 100% !important;
+          }
+          .slider-wapper-3-large {
+               display: none !important;
+          }
+          .slide-wapper-3-small {
+               display: flex !important;
+               .number {
+                    line-height: 35px !important;
+               }
+               .content {
+                    .p {
+                         font-size: 15px;
+                    }
+               }
+          }
           .mySwiperHome {
                .content-swiper {
                     width: 95%;
@@ -518,12 +551,12 @@
 
                     &.next {
                          bottom: 13%;
-                         right: 10%;
+                         right: 19%;
                     }
 
                     &.prev {
                          bottom: 13%;
-                         right: 21%;
+                         right: 30%;
                     }
 
                }
@@ -548,17 +581,19 @@
                          line-height: 30px;
                          width: 40%;
                     }
+
                     &.two .titel-swiper {
                          font-size: 22px;
                          line-height: 30px;
                          width: 100%;
                     }
+
                     &.two .desc-swiper {
                          font-size: 20px;
                          line-height: 36px;
                     }
 
-                    .desc{
+                    .desc {
                          font-size: 15px;
                          margin-block: 10px 20px !important;
                     }
@@ -573,4 +608,8 @@
 
           }
      }
+}
+
+@media (max-width: 768px) {
+     
 }

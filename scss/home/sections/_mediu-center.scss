@@ -74,7 +74,7 @@
           background-image: url("../../../assets/img/mediu center/7.png");
           background-size: cover;
           background-position: center center;
-          height: 550px;
+          height: 536px;
           display: flex;
           align-items: flex-end;
           justify-content: space-around;
@@ -208,6 +208,9 @@
           height: 570px;
           margin-bottom: 30px;
      }
+     .swiper-slide-journals {
+          // width: 452px !important;
+     }
 
      .image-journals {
           position: relative;
@@ -267,10 +270,9 @@
      }
 
      .swiper-slide-discussions {
-          // height: 94%;
-          box-shadow: 0px 0px 18px -7px rgba(0,0,0,0.75);
-          -webkit-box-shadow: 0px 0px 18px -7px rgba(0,0,0,0.75);
-          -moz-box-shadow: 0px 0px 18px -7px rgba(0,0,0,0.75);
+          box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.41);
+-webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.41);
+-moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.41);
           .discussions-content {
                background-image: url("../../../assets/img/academics/Mask\ Group\ 48-2.svg");
                background-size: contain;
@@ -337,7 +339,7 @@
                }
 
                .des {
-                    font-size: 16px;
+                    font-size: 17px;
                     font-weight: 400;
                     margin-bottom: 15px;
                }
@@ -1045,8 +1047,14 @@
      }
 }
 
-// @media (min-width: 1481px) {
-//      .image-journals-content {
-//           right: 14px !important;
-//      }
-// }
+
+@media (min-width: 1481px) and (max-width: 1512px) {
+     #mediu-center .image-tab1-4 {
+          height: 570px !important;
+     }
+}
+@media (min-width: 1141px) and (max-width: 1278px) {
+     #mediu-center .image-tab1-4 {
+          height: 395px !important;
+     }
+}

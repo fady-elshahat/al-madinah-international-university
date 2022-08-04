@@ -152,6 +152,36 @@ var swiper = new Swiper( ".mySwiperAcademics", {
 
 
 
+
+
+// swiper in home
+var mySwiperHome3 = new Swiper( ".mySwiperHome3", {
+     spaceBetween: 0,
+     slidesPerGroup: 1,
+     autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+     },
+     navigation: {
+          nextEl: "#academics .swiper-button.next",
+          prevEl: "#academics .swiper-button.prev"
+     },
+     breakpoints: {
+          400: {
+               slidesPerView: 2,
+               spaceBetween: 10,
+          },
+          340: {
+               slidesPerView: 1,
+               spaceBetween: 10,
+          },
+
+
+     },
+} );
+
+
+
 // Swiper In Apply
 var swiper = new Swiper( ".mySwiper", {
      spaceBetween: 30,
@@ -193,6 +223,95 @@ tabsMediuArray.forEach( element => {
 
      } )
 } )
+
+
+// swiper in discussions in mediu
+var swiperDiscussions = new Swiper( ".swiper-discussions", {
+     spaceBetween: 30,
+     slidesPerGroup: 2,
+     autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+     },
+     navigation: {
+          nextEl: "#academics .swiper-button.next",
+          prevEl: "#academics .swiper-button.prev"
+     },
+     breakpoints: {
+          1114: {
+               slidesPerView: 3,
+               spaceBetween: 15,
+          },
+          1024: {
+               slidesPerView: 2.9,
+               spaceBetween: 15,
+          },
+          992: {
+               slidesPerView: 2.5,
+               spaceBetween: 15,
+          },
+          780: {
+               slidesPerView: 2,
+               spaceBetween: 15,
+          },
+          400: {
+               slidesPerView: 1.5,
+               spaceBetween: 15,
+          },
+          340: {
+               slidesPerView: 1,
+               spaceBetween: 15,
+          },
+
+
+     },
+} );
+
+
+
+
+// swiper in journals in mediu
+var swiperJournals = new Swiper( ".swiperJournals", {
+     spaceBetween: 0,
+     slidesPerGroup: 1,
+     autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+     },
+     navigation: {
+          nextEl: "#academics .swiper-button.next",
+          prevEl: "#academics .swiper-button.prev"
+     },
+     breakpoints: {
+          1665: {
+               slidesPerView: 3.2,
+               spaceBetween: 15,
+          },
+          1114: {
+               slidesPerView: 3,
+               spaceBetween: 10,
+          },
+          780: {
+               slidesPerView: 2.5,
+               spaceBetween: 10,
+          },
+          400: {
+               slidesPerView: 1.5,
+               spaceBetween: 10,
+          },
+          340: {
+               slidesPerView: 1,
+               spaceBetween: 10,
+          },
+
+
+     },
+} );
+
+
+
+
+
 tabsSmallMediuArray.forEach( element => {
      element.addEventListener( 'click', ( e ) => {
           tabsSmallMediuArray.forEach( ( el ) => {

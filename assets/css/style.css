@@ -32804,15 +32804,18 @@ textarea.form-control-lg {
   overflow-x: hidden;
   height: 740px;
 }
-#home .mySwiperHome {
+#home .mySwiperHome,
+#home .mySwiperHome3 {
   position: relative;
   height: 100%;
 }
-#home .mySwiperHome .swiper-slide {
+#home .mySwiperHome .swiper-slide,
+#home .mySwiperHome3 .swiper-slide {
   background-position: top left;
   height: 100%;
 }
-#home .mySwiperHome .content-swiper {
+#home .mySwiperHome .content-swiper,
+#home .mySwiperHome3 .content-swiper {
   z-index: 22;
   display: flex;
   flex-direction: column;
@@ -32820,24 +32823,29 @@ textarea.form-control-lg {
   width: 50%;
   color: #FFFFFF;
 }
-#home .mySwiperHome .content-swiper .titel-swiper {
+#home .mySwiperHome .content-swiper .titel-swiper,
+#home .mySwiperHome3 .content-swiper .titel-swiper {
   font-size: 48px;
   font-weight: 600;
   line-height: 70px;
 }
-#home .mySwiperHome .content-swiper .desc-swiper {
+#home .mySwiperHome .content-swiper .desc-swiper,
+#home .mySwiperHome3 .content-swiper .desc-swiper {
   font-size: 24px;
   line-height: 42px;
 }
-#home .mySwiperHome .content-swiper .form-select {
+#home .mySwiperHome .content-swiper .form-select,
+#home .mySwiperHome3 .content-swiper .form-select {
   padding-left: 50px;
   font-size: 16px;
   line-height: 42px;
 }
-#home .mySwiperHome .content-swiper .form-select:first-child {
+#home .mySwiperHome .content-swiper .form-select:first-child,
+#home .mySwiperHome3 .content-swiper .form-select:first-child {
   margin-inline-end: 30px;
 }
-#home .mySwiperHome .content-swiper .btn-submit {
+#home .mySwiperHome .content-swiper .btn-submit,
+#home .mySwiperHome3 .content-swiper .btn-submit {
   margin-left: 18px;
   color: #FFFFFF;
   background-color: #ED1A3B;
@@ -32848,32 +32856,39 @@ textarea.form-control-lg {
   align-items: center;
   font-weight: 400;
 }
-#home .mySwiperHome .content-swiper .btn-submit i {
+#home .mySwiperHome .content-swiper .btn-submit i,
+#home .mySwiperHome3 .content-swiper .btn-submit i {
   padding-inline-end: 10px;
 }
-#home .mySwiperHome .content-swiper.two .btn-Practical button {
+#home .mySwiperHome .content-swiper.two .btn-Practical button,
+#home .mySwiperHome3 .content-swiper.two .btn-Practical button {
   border: 1px solid rgba(246, 254, 255, 0.2117647059);
   color: #FFFFFF;
   border-radius: 50px;
   padding: 10px 25px;
 }
-#home .mySwiperHome .content-swiper.two .btn-Practical button:hover {
+#home .mySwiperHome .content-swiper.two .btn-Practical button:hover,
+#home .mySwiperHome3 .content-swiper.two .btn-Practical button:hover {
   color: #000000;
 }
-#home .mySwiperHome .content-swiper.two .desc-swiper {
+#home .mySwiperHome .content-swiper.two .desc-swiper,
+#home .mySwiperHome3 .content-swiper.two .desc-swiper {
   font-size: 32px;
   line-height: 42px;
   margin-bottom: 10px;
 }
-#home .mySwiperHome .content-swiper.two .desc {
+#home .mySwiperHome .content-swiper.two .desc,
+#home .mySwiperHome3 .content-swiper.two .desc {
   margin-top: 10px;
 }
-#home .mySwiperHome .content-swiper.two .desc i {
+#home .mySwiperHome .content-swiper.two .desc i,
+#home .mySwiperHome3 .content-swiper.two .desc i {
   color: #FFDD00;
   padding-right: 14px;
   font-size: 18px;
 }
-#home .mySwiperHome .content-swiper.two .btn-view {
+#home .mySwiperHome .content-swiper.two .btn-view,
+#home .mySwiperHome3 .content-swiper.two .btn-view {
   border-radius: 50px;
   padding: 15px 30px;
   color: #FFFFFF;
@@ -32881,13 +32896,16 @@ textarea.form-control-lg {
   font-weight: 500;
   font-size: 15px;
 }
-#home .mySwiperHome .content-swiper.two .btn-view:hover {
+#home .mySwiperHome .content-swiper.two .btn-view:hover,
+#home .mySwiperHome3 .content-swiper.two .btn-view:hover {
   color: #000000;
   background-color: #FFDD00;
   border-color: #FFDD00;
 }
 #home .mySwiperHome .content-swiper .btn-join,
-#home .mySwiperHome .content-swiper .btn-numbers {
+#home .mySwiperHome .content-swiper .btn-numbers,
+#home .mySwiperHome3 .content-swiper .btn-join,
+#home .mySwiperHome3 .content-swiper .btn-numbers {
   color: #FFFFFF;
   background-color: #ED1A3B;
   padding: 18px 24px;
@@ -32900,27 +32918,34 @@ textarea.form-control-lg {
   padding: 15px 30px;
 }
 #home .mySwiperHome .content-swiper .btn-join i,
-#home .mySwiperHome .content-swiper .btn-numbers i {
+#home .mySwiperHome .content-swiper .btn-numbers i,
+#home .mySwiperHome3 .content-swiper .btn-join i,
+#home .mySwiperHome3 .content-swiper .btn-numbers i {
   padding-left: 15px;
   color: #FFDD00;
 }
-#home .mySwiperHome .content-swiper.three {
+#home .mySwiperHome .content-swiper.three,
+#home .mySwiperHome3 .content-swiper.three {
   width: 80%;
 }
-#home .mySwiperHome .content-swiper.three .number {
+#home .mySwiperHome .content-swiper.three .number,
+#home .mySwiperHome3 .content-swiper.three .number {
   font-size: 42px;
   color: #FFDD00;
   line-height: 24px;
 }
-#home .mySwiperHome .content-swiper.three .content span {
+#home .mySwiperHome .content-swiper.three .content span,
+#home .mySwiperHome3 .content-swiper.three .content span {
   font-size: 26px;
   font-weight: 400;
 }
-#home .mySwiperHome .content-swiper.three .content p {
+#home .mySwiperHome .content-swiper.three .content p,
+#home .mySwiperHome3 .content-swiper.three .content p {
   font-size: 28px;
   font-weight: 600;
 }
-#home .mySwiperHome .swiper-button {
+#home .mySwiperHome .swiper-button,
+#home .mySwiperHome3 .swiper-button {
   width: 45px;
   height: 45px;
   background-color: #FFFFFF;
@@ -32932,15 +32957,18 @@ textarea.form-control-lg {
   justify-content: center;
   align-items: center;
 }
-#home .mySwiperHome .swiper-button.next {
+#home .mySwiperHome .swiper-button.next,
+#home .mySwiperHome3 .swiper-button.next {
   bottom: 13%;
   right: 30%;
 }
-#home .mySwiperHome .swiper-button.swiper-button-disabled {
+#home .mySwiperHome .swiper-button.swiper-button-disabled,
+#home .mySwiperHome3 .swiper-button.swiper-button-disabled {
   color: #999;
   cursor: default;
 }
-#home .mySwiperHome .swiper-button.prev {
+#home .mySwiperHome .swiper-button.prev,
+#home .mySwiperHome3 .swiper-button.prev {
   bottom: 13%;
   right: 34%;
 }
@@ -33153,14 +33181,14 @@ textarea.form-control-lg {
     margin-bottom: 20px !important;
   }
   #home .mySwiperHome .content-swiper.three .number {
-    font-size: 35px;
+    font-size: 30px;
   }
   #home .mySwiperHome .content-swiper.three .content span {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
   }
   #home .mySwiperHome .content-swiper.three .content p {
-    font-size: 22px;
+    font-size: 19px;
   }
   #home .mySwiperHome .swiper-button {
     width: 30px;
@@ -33183,6 +33211,29 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 768px) {
+  #home .desc i {
+    font-size: 16px !important;
+  }
+  #home .btn-join,
+#home .btn-view {
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+  #home .titel-swiper {
+    width: 100% !important;
+  }
+  #home .slider-wapper-3-large {
+    display: none !important;
+  }
+  #home .slide-wapper-3-small {
+    display: flex !important;
+  }
+  #home .slide-wapper-3-small .number {
+    line-height: 35px !important;
+  }
+  #home .slide-wapper-3-small .content .p {
+    font-size: 15px;
+  }
   #home .mySwiperHome .content-swiper {
     width: 95%;
     margin-inline: auto;
@@ -33208,11 +33259,11 @@ textarea.form-control-lg {
   }
   #home .mySwiperHome .swiper-button.next {
     bottom: 13%;
-    right: 10%;
+    right: 19%;
   }
   #home .mySwiperHome .swiper-button.prev {
     bottom: 13%;
-    right: 21%;
+    right: 30%;
   }
   #home .container {
     max-width: 720px;
@@ -55780,6 +55831,16 @@ textarea.form-control-lg {
     margin-right: 10px;
   }
 }
+@media (max-width: 992px) {
+  .contact {
+    font-size: 18px;
+    padding: 15px 19px;
+    bottom: 16%;
+  }
+  .contact i {
+    margin-right: 11px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1105px) {
   .apply .apply-content-p1 {
     font-size: 14px !important;
@@ -56024,6 +56085,14 @@ textarea.form-control-lg {
   }
   .swiper-pagination-bullet-active {
     background-color: black;
+  }
+}
+@media (min-width: 993px) and (max-width: 1040px) {
+  .apply .container {
+    padding-inline: 30px !important;
+  }
+  .apply .apply-box .applyNow > button {
+    padding: 0px 10px !important;
   }
 }
 /*!
@@ -90254,7 +90323,7 @@ textarea.form-control-lg {
   background-image: url("../../../assets/img/mediu center/7.png");
   background-size: cover;
   background-position: center center;
-  height: 550px;
+  height: 536px;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -90452,9 +90521,9 @@ textarea.form-control-lg {
   background-color: rgba(112, 112, 112, 0.3);
 }
 #mediu-center .swiper-slide-discussions {
-  box-shadow: 0px 0px 18px -7px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 18px -7px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 18px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.41);
 }
 #mediu-center .swiper-slide-discussions .discussions-content {
   background-image: url("../../../assets/img/academics/Mask Group 48-2.svg");
@@ -90512,7 +90581,7 @@ textarea.form-control-lg {
   margin-bottom: 20px;
 }
 #mediu-center .swiper-slide-discussions .discussions-header .des {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   margin-bottom: 15px;
 }
@@ -91041,6 +91110,16 @@ textarea.form-control-lg {
   }
   .discussions-content .discussions-footer p {
     font-size: 13px !important;
+  }
+}
+@media (min-width: 1481px) and (max-width: 1512px) {
+  #mediu-center .image-tab1-4 {
+    height: 570px !important;
+  }
+}
+@media (min-width: 1141px) and (max-width: 1278px) {
+  #mediu-center .image-tab1-4 {
+    height: 395px !important;
   }
 }
 /*!

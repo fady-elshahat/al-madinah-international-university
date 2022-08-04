@@ -12,7 +12,6 @@
   position: absolute;
   top: 20px;
   right: 20px;
- 
   width: 35%;
   background-color: #F3EFE5;
   input {
@@ -61,7 +60,7 @@
       height: 40px;
       background-color: $font-primary;
       border-radius: 50%;
-     @include flexCentar;
+      @include flexCentar;
       margin-right: 10px;
     }
     .close-icon {

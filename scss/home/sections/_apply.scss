@@ -209,6 +209,17 @@
   }
 }
 
+@media (max-width: 992px) {
+  .contact {
+    font-size: 18px;
+    padding: 15px 19px;
+    bottom: 16%;
+    i {
+      margin-right: 11px;
+    }
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1105px) {
   .apply {
     .apply-content-p1 {
@@ -474,5 +485,15 @@
 
   .swiper-pagination-bullet-active {
     background-color: black;
+  }
+}
+
+
+@media (min-width: 993px) and (max-width: 1040px) {
+  .apply .container {
+    padding-inline: 30px !important;
+  }
+  .apply .apply-box .applyNow > button {
+    padding: 0px 10px !important;
   }
 }
