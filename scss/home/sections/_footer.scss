@@ -1,6 +1,7 @@
 @use '../../components/mixins' as *;
 
 footer {
+  overflow-x: hidden;
   .wrapper-one {
     background-color: $bg-footer;
     color: white;
@@ -185,6 +186,9 @@ footer {
   }
 }
 @media (max-width: 650px) {
+  footer {
+    background-color: $bg-footer;
+  }
   .wrapper-one {
     p, span {
       font-size: 13px;
@@ -221,7 +225,7 @@ footer {
     box-shadow: 0px 6px 17px 0px rgba($color: $bg-footer, $alpha: 0.30) inset;
     -webkit-box-shadow: 0px 6px 17px 0px rgba($color: $bg-footer, $alpha: 0.30) inset;
     -moz-box-shadow: 0px 6px 17px 0px rgba($color: $bg-footer, $alpha: 0.30) inset;
-    transform: translatey(-20px);
+    // transform: translatey(-20px);
     border-radius: 20px 20px 0 0;
     background-color: rgb(249, 247, 247) !important;
     .footer-links {

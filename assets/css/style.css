@@ -21527,6 +21527,7 @@ textarea.form-control-lg {
   }
 }
 .navbar {
+  overflow-x: hidden;
   background-color: transparent;
   z-index: 4;
   width: 100%;
@@ -21560,18 +21561,20 @@ textarea.form-control-lg {
   left: 63px;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-submenu {
-  display: none;
+  opacity: 0;
   position: absolute;
   left: 99% !important;
   top: 0;
   background-color: #F3EFE5;
+  transition: 1s;
+  display: block;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-submenu-left {
   right: 100%;
   left: auto;
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu > li:hover > .dropdown-submenu.show {
-  display: block;
+.navbar-expand-lg .navbar-nav .dropdown-menu > li:hover .dropdown-submenu {
+  opacity: 1;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
   border-bottom: 1px solid rgba(112, 112, 112, 0.1);
@@ -32785,6 +32788,7 @@ textarea.form-control-lg {
   }
 }
 #home {
+  overflow-x: hidden;
   height: 740px;
 }
 #home .mySwiperHome {
@@ -44292,6 +44296,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+footer {
+  overflow-x: hidden;
+}
 footer .wrapper-one {
   background-color: #0A2564;
   color: white;
@@ -44446,6 +44453,9 @@ footer .wrapper-two .copyright {
   }
 }
 @media (max-width: 650px) {
+  footer {
+    background-color: #0A2564;
+  }
   .wrapper-one p, .wrapper-one span {
     font-size: 13px;
   }
@@ -44480,7 +44490,6 @@ footer .wrapper-two .copyright {
     box-shadow: 0px 6px 17px 0px rgba(10, 37, 100, 0.3) inset;
     -webkit-box-shadow: 0px 6px 17px 0px rgba(10, 37, 100, 0.3) inset;
     -moz-box-shadow: 0px 6px 17px 0px rgba(10, 37, 100, 0.3) inset;
-    transform: translatey(-20px);
     border-radius: 20px 20px 0 0;
     background-color: rgb(249, 247, 247) !important;
   }
@@ -55566,6 +55575,7 @@ textarea.form-control-lg {
 }
 
 .apply {
+  overflow-x: hidden;
   background-color: white;
   z-index: 888888;
   transform: translateY(-40px);
@@ -67067,6 +67077,7 @@ textarea.form-control-lg {
   }
 }
 #services {
+  overflow-x: hidden;
   background-color: #F3EFE5;
   padding: 50px 0;
   /* Track */
@@ -78868,6 +78879,7 @@ textarea.form-control-lg {
   }
 }
 #academics {
+  overflow-x: hidden;
   padding: 50px 0;
 }
 #academics h2, #academics .h2 {

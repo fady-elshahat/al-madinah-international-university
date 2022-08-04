@@ -1,6 +1,7 @@
 @use '../../components/_mixins.scss' as *;
 
 #home {
+     overflow-x: hidden;
      height: 740px;
 
      .mySwiperHome {

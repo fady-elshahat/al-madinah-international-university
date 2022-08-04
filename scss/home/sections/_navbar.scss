@@ -2,6 +2,7 @@
 
 
 .navbar {
+     overflow-x: hidden;
      .dropdown-menu {
           left: -80% !important;
      }
@@ -52,11 +53,13 @@
      }
 
      .dropdown-submenu {
-          display: none;
+          opacity: 0;
           position: absolute;
           left: 99% !important;
           top: 0;
           background-color: #F3EFE5;
+          transition: 1s;
+          display: block;
      }
 
      .dropdown-submenu-left {
@@ -64,8 +67,8 @@
           left: auto;
      }
 
-     &>li:hover>.dropdown-submenu.show {
-          display: block;
+     &>li:hover .dropdown-submenu {
+          opacity: 1;
      }
 
      .dropdown-item {
