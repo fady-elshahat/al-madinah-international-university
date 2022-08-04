@@ -1,8 +1,8 @@
-@import '../../custom';
+@import '../../components/variables';
 
 
 .navbar {
-          .dropdown-menu {
+     .dropdown-menu {
           left: -80% !important;
      }
 
@@ -42,7 +42,8 @@
      &.lang {
           left: 25% !important;
           min-width: 110px !important;
-          span {     
+
+          span {
                &::after {
                     width: 50px;
                }
@@ -304,6 +305,7 @@
      .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
           font-size: 12px !important;
      }
+
      .navbar img {
           width: 190px !important;
      }

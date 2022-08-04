@@ -3,7 +3,7 @@
 
 
 // Global
-@import "custom";
+@import "./custom";
 
 
 // Section
@@ -22,5 +22,5 @@
 body {
      font-family: 'Poppins', sans-serif;
      color: $font-text;
-
+     overflow-x: hidden;
 }

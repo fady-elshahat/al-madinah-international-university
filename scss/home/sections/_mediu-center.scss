@@ -1,4 +1,5 @@
-@use '../../components/mixins' as *;
+@import '../../components/mixins.scss';
+@import '../../components/variables';
 
 #mediu-center {
      background-color: $bg-mediu-center;
@@ -82,7 +83,8 @@
      }
 
 
-     .image-tab2-4 { //-----------
+     .image-tab2-4 {
+          //-----------
           background-image: url("../../../assets/img/mediu center/7.png");
           background-size: cover;
           background-position: center center;
@@ -208,9 +210,6 @@
           height: 570px;
           margin-bottom: 30px;
      }
-     .swiper-slide-journals {
-          // width: 452px !important;
-     }
 
      .image-journals {
           position: relative;
@@ -270,9 +269,10 @@
      }
 
      .swiper-slide-discussions {
-          box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.41);
--webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.41);
--moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.41);
+          box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.41);
+          -webkit-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.41);
+          -moz-box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.41);
+
           .discussions-content {
                background-image: url("../../../assets/img/academics/Mask\ Group\ 48-2.svg");
                background-size: contain;
@@ -283,22 +283,26 @@
                height: 537px;
                transition: 0.5s;
           }
+
           &:hover {
                .discussions-content {
                     background-image: url("../../../assets/img/academics/Mask\ Group\ 48.svg");
                }
+
                .discussions-footer {
                     background-color: $font-primary;
                }
           }
+
           .discussions-icon {
                display: block;
                text-align: end;
                padding: 0 30px;
           }
+
           .discussions-header {
                padding: 70px 30px 0 30px;
-               
+
 
 
                .num {
@@ -345,6 +349,7 @@
                }
 
           }
+
           .discussions-footer {
                display: flex;
                justify-content: space-between;
@@ -352,21 +357,26 @@
                background-color: $bg-section;
                padding: 10px 30px;
                transition: 0.5s;
+
                .alarm {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+
                     p {
                          margin-bottom: 0;
                     }
+
                     .from {
                          margin-right: 20px;
                     }
+
                     .address {
                          font-size: 14px;
                          font-weight: 400;
                     }
                }
+
                i {
                     background-color: white;
                     width: 40px;
@@ -964,8 +974,10 @@
 @media (min-width: 1278px) and (max-width: 1490px) {
      .discussions-content {
           height: 394px !important;
+
           .discussions-header {
                padding-top: 50px !important;
+
                .num {
                     font-size: 33px !important;
                }
@@ -985,8 +997,10 @@
 @media (min-width: 1141px) and (max-width: 1278px) {
      .discussions-content {
           height: 366px !important;
+
           .discussions-header {
                padding-top: 25px !important;
+
                .num {
                     font-size: 30px !important;
                }
@@ -1005,8 +1019,10 @@
 @media (min-width: 500px) and (max-width: 1140px) {
      .discussions-content {
           height: 490px !important;
+
           .discussions-header {
                padding-top: 60px !important;
+
                .num {
                     font-size: 32px !important;
                }
@@ -1025,8 +1041,10 @@
 @media (max-width: 500px) {
      .discussions-content {
           height: 490px !important;
+
           .discussions-header {
                padding-top: 60px !important;
+
                .num {
                     font-size: 29px !important;
                }
@@ -1039,6 +1057,7 @@
                     font-size: 12px !important;
                }
           }
+
           .discussions-footer {
                p {
                     font-size: 13px !important;
@@ -1053,6 +1072,7 @@
           height: 570px !important;
      }
 }
+
 @media (min-width: 1141px) and (max-width: 1278px) {
      #mediu-center .image-tab1-4 {
           height: 395px !important;

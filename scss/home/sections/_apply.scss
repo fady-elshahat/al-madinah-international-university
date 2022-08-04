@@ -1,5 +1,5 @@
-@use '../../components/mixins' as *;
-
+@import '../../components/mixins.scss';
+@import '../../components/variables';
 
 .res-one-apply,
 .res-two-apply {
@@ -7,13 +7,14 @@
 }
 
 .apply {
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: white;
   z-index: 888888;
   transform: translateY(-40px);
   padding-block-start: 29px;
   border-radius: 25px 25px 0 0;
   position: relative;
+
   p {
     margin-bottom: 0;
   }
@@ -214,6 +215,7 @@
     font-size: 18px;
     padding: 15px 19px;
     bottom: 16%;
+
     i {
       margin-right: 11px;
     }
@@ -493,7 +495,8 @@
   .apply .container {
     padding-inline: 30px !important;
   }
-  .apply .apply-box .applyNow > button {
+
+  .apply .apply-box .applyNow>button {
     padding: 0px 10px !important;
   }
 }

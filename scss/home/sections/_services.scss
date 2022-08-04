@@ -1,10 +1,12 @@
-@use '../../components/_mixins.scss' as *;
+@import '../../components/mixins.scss';
+@import '../../components/variables';
 
 #services {
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: $bg-section;
   padding: 50px 0;
   @include ScrollBar;
+
 
   .btns-2 {
     display: none;
@@ -150,6 +152,7 @@
     direction: rtl;
     padding: 0;
     margin-block-start: 50px;
+
     li {
       position: relative;
       font-size: 15px;
@@ -409,11 +412,13 @@
         width: fit-content;
       }
     }
+
+    .btns {
+      display: none !important;
+    }
   }
 
-  .btns {
-    display: none !important;
-  }
+
 
   .btns-2 {
     justify-content: center;
@@ -647,7 +652,7 @@
     h2 {
 
       &::before {
-        font-size: 130px;
+        font-size: 80px;
       }
     }
 
@@ -690,7 +695,15 @@
 
 @media (max-width: 864px) {
   #services {
+
     padding-inline: 0 20px;
+
+    h2 {
+
+      &::before {
+        font-size: 70px;
+      }
+    }
 
     .btns-2 {
       bottom: -60px;
@@ -902,5 +915,3 @@
     }
   }
 }
-
-  
