@@ -30,6 +30,7 @@
     padding: 0 30px;
     display: none;
 
+
     .tab-list-small {
       display: inline-block;
       overflow: auto;
@@ -142,8 +143,9 @@
   }
 
   .services-list {
-    max-height: 600px;
-    overflow-y: scroll;
+    // max-height: 600px;
+    height: 450px;
+    overflow-y: auto;
     overflow-x: hidden;
     direction: rtl;
     padding: 0;
@@ -900,3 +902,5 @@
     }
   }
 }
+
+  
