@@ -82,12 +82,12 @@
      }
 
 
-     .image-tab2-4 {
+     .image-tab2-4 { //-----------
           background-image: url("../../../assets/img/mediu center/7.png");
           background-size: cover;
           background-position: center center;
           height: 550px;
-          display: flex;
+          display: none;
           align-items: flex-end;
           justify-content: space-around;
           padding-bottom: 3%;
