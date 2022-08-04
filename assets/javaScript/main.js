@@ -189,7 +189,7 @@ tabsMediuArray.forEach( element => {
           tabsContentMediuArray.forEach( ( div ) => {
                div.style.display = "none"
           } )
-          document.querySelector( e.currentTarget.dataset.tab ).style.display = "block"
+          document.querySelector( `.tab-mediu-content`+e.currentTarget.dataset.tab ).style.display = "block"
 
      } )
 } )
@@ -202,7 +202,8 @@ tabsSmallMediuArray.forEach( element => {
           tabsContentMediuArray.forEach( ( div ) => {
                div.style.display = "none"
           } )
-          document.querySelector( e.currentTarget.dataset.tab ).style.display = "block"
+          console.log(`.tab-mediu-content`+e.currentTarget.dataset.tab);
+          document.querySelector( `.tab-mediu-content`+e.currentTarget.dataset.tab ).style.display = "block"
 
      } )
 } )

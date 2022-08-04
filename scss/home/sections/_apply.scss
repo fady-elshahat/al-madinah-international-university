@@ -9,10 +9,10 @@
 .apply {
   background-color: white;
   z-index: 888888;
-  transform: translateY(-30px);
+  transform: translateY(-40px);
   padding-block-start: 29px;
   border-radius: 25px 25px 0 0;
-
+  position: relative;
   p {
     margin-bottom: 0;
   }
@@ -21,6 +21,8 @@
   h5 {
     font-size: 32px;
     margin-bottom: 44px;
+    margin-inline-start: 50px;
+    margin-top: 35px
   }
 
   .col-md-4 {

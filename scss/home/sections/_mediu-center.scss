@@ -204,6 +204,178 @@
           }
      }
 
+     .swiper-journals {
+          height: 570px;
+          margin-bottom: 30px;
+     }
+
+     .image-journals {
+          position: relative;
+          width: fit-content;
+
+          .image-journals-content {
+               background-color: white;
+               box-shadow: -5px 0px 18px -6px rgba(0, 0, 0, 0.75);
+               -webkit-box-shadow: -5px 0px 18px -6px rgba(0, 0, 0, 0.75);
+               -moz-box-shadow: -5px 0px 18px -6px rgba(0, 0, 0, 0.75);
+               width: 70%;
+               position: absolute;
+               bottom: 15%;
+               right: 0;
+               padding: 20px;
+
+               .address {
+                    font-size: 32px;
+                    font-weight: 400;
+                    margin-bottom: 0;
+               }
+
+               .date {
+                    font-size: 24px;
+                    font-weight: 400;
+               }
+
+               .link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    button {
+                         border: none;
+                         background-color: transparent;
+
+                         a {
+                              color: $font-secondary;
+                              text-decoration: none;
+                         }
+                    }
+
+                    .icon-journals {
+                         display: flex;
+                         align-items: center;
+
+                         span {
+                              display: inline-block;
+                              margin-inline-end: 10px;
+                              width: 30px;
+                              height: 1px;
+                              background-color: rgba($color: $font-black-light, $alpha: 0.3);
+                         }
+                    }
+               }
+          }
+     }
+
+     .swiper-slide-discussions {
+          // height: 94%;
+          box-shadow: 0px 0px 18px -7px rgba(0,0,0,0.75);
+          -webkit-box-shadow: 0px 0px 18px -7px rgba(0,0,0,0.75);
+          -moz-box-shadow: 0px 0px 18px -7px rgba(0,0,0,0.75);
+          .discussions-content {
+               background-image: url("../../../assets/img/academics/Mask\ Group\ 48-2.svg");
+               background-size: contain;
+               background-repeat: no-repeat;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               height: 537px;
+               transition: 0.5s;
+          }
+          &:hover {
+               .discussions-content {
+                    background-image: url("../../../assets/img/academics/Mask\ Group\ 48.svg");
+               }
+               .discussions-footer {
+                    background-color: $font-primary;
+               }
+          }
+          .discussions-icon {
+               display: block;
+               text-align: end;
+               padding: 0 30px;
+          }
+          .discussions-header {
+               padding: 70px 30px 0 30px;
+               
+
+
+               .num {
+                    font-size: 36px;
+                    font-weight: 400px;
+                    margin-bottom: 0;
+                    line-height: 28px;
+               }
+
+               .date {
+                    margin-bottom: 20px;
+
+                    p {
+                         display: inline-block;
+                    }
+
+                    .day {
+                         position: relative;
+                         margin-right: 5px;
+
+                         &::after {
+                              content: '';
+                              position: absolute;
+                              bottom: -1px;
+                              left: 0;
+                              right: 0;
+                              height: 1px;
+                              background-color: rgba($color: $font-black-light, $alpha: 0.9);
+                         }
+                    }
+               }
+
+               h5 {
+                    color: $font-secondary;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+               }
+
+               .des {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+               }
+
+          }
+          .discussions-footer {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               background-color: $bg-section;
+               padding: 10px 30px;
+               transition: 0.5s;
+               .alarm {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    p {
+                         margin-bottom: 0;
+                    }
+                    .from {
+                         margin-right: 20px;
+                    }
+                    .address {
+                         font-size: 14px;
+                         font-weight: 400;
+                    }
+               }
+               i {
+                    background-color: white;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    @include flexCentar;
+                    font-size: 20px;
+               }
+          }
+     }
+
      .tabs {
           background-color: $font-primary;
           padding: 19px 5px;
@@ -297,14 +469,15 @@
 
      .tab-mediu-content {
           display: none;
+
           .btn-more {
                @include btnYallow;
-          
+
                &:hover {
                     border-color: transparent;
                }
           }
-          
+
           &.News {
                display: block;
           }
@@ -596,6 +769,61 @@
      }
 }
 
+@media (min-width: 1141px) and (max-width: 1480px) {
+     .swiper-journals {
+          height: 430px !important;
+     }
+
+     .swiper-slide-journals {
+          width: 300px !important;
+     }
+
+     .image-journals {
+          width: 300px;
+
+          .image-journals-content {
+               .address {
+                    font-size: 26px !important;
+               }
+
+               .date {
+                    font-size: 20px !important;
+               }
+          }
+     }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+     .image-journals {
+          .image-journals-content {
+               .address {
+                    font-size: 20px !important;
+               }
+
+               .date {
+                    font-size: 17px !important;
+               }
+          }
+     }
+}
+
+@media (max-width: 500px) {
+     .image-journals {
+          .image-journals-content {
+               .address {
+                    font-size: 18px !important;
+               }
+
+               .date {
+                    font-size: 15px !important;
+               }
+
+               a {
+                    font-size: 13px;
+               }
+          }
+     }
+}
 
 @media (max-width: 1140px) {
      #mediu-center {
@@ -730,3 +958,95 @@
           }
      }
 }
+
+@media (min-width: 1278px) and (max-width: 1490px) {
+     .discussions-content {
+          height: 394px !important;
+          .discussions-header {
+               padding-top: 50px !important;
+               .num {
+                    font-size: 33px !important;
+               }
+
+               h5 {
+                    font-size: 20px !important;
+               }
+
+               .des {
+                    font-size: 14px !important;
+               }
+          }
+     }
+
+}
+
+@media (min-width: 1141px) and (max-width: 1278px) {
+     .discussions-content {
+          height: 366px !important;
+          .discussions-header {
+               padding-top: 25px !important;
+               .num {
+                    font-size: 30px !important;
+               }
+
+               h5 {
+                    font-size: 18px !important;
+               }
+
+               .des {
+                    font-size: 13px !important;
+               }
+          }
+     }
+}
+
+@media (min-width: 500px) and (max-width: 1140px) {
+     .discussions-content {
+          height: 490px !important;
+          .discussions-header {
+               padding-top: 60px !important;
+               .num {
+                    font-size: 32px !important;
+               }
+
+               h5 {
+                    font-size: 20px !important;
+               }
+
+               .des {
+                    font-size: 15px !important;
+               }
+          }
+     }
+}
+
+@media (max-width: 500px) {
+     .discussions-content {
+          height: 490px !important;
+          .discussions-header {
+               padding-top: 60px !important;
+               .num {
+                    font-size: 29px !important;
+               }
+
+               h5 {
+                    font-size: 17px !important;
+               }
+
+               .des {
+                    font-size: 12px !important;
+               }
+          }
+          .discussions-footer {
+               p {
+                    font-size: 13px !important;
+               }
+          }
+     }
+}
+
+// @media (min-width: 1481px) {
+//      .image-journals-content {
+//           right: 14px !important;
+//      }
+// }

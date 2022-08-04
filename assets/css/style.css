@@ -55568,9 +55568,10 @@ textarea.form-control-lg {
 .apply {
   background-color: white;
   z-index: 888888;
-  transform: translateY(-30px);
+  transform: translateY(-40px);
   padding-block-start: 29px;
   border-radius: 25px 25px 0 0;
+  position: relative;
 }
 .apply p {
   margin-bottom: 0;
@@ -55578,6 +55579,8 @@ textarea.form-control-lg {
 .apply h5, .apply .h5 {
   font-size: 32px;
   margin-bottom: 44px;
+  margin-inline-start: 50px;
+  margin-top: 35px;
 }
 .apply .col-md-4 {
   position: relative;
@@ -90371,6 +90374,156 @@ textarea.form-control-lg {
 #mediu-center .tab-small .tab-list-small li:hover::after {
   content: "";
 }
+#mediu-center .swiper-journals {
+  height: 570px;
+  margin-bottom: 30px;
+}
+#mediu-center .image-journals {
+  position: relative;
+  width: fit-content;
+}
+#mediu-center .image-journals .image-journals-content {
+  background-color: white;
+  box-shadow: -5px 0px 18px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -5px 0px 18px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -5px 0px 18px -6px rgba(0, 0, 0, 0.75);
+  width: 70%;
+  position: absolute;
+  bottom: 15%;
+  right: 0;
+  padding: 20px;
+}
+#mediu-center .image-journals .image-journals-content .address {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+#mediu-center .image-journals .image-journals-content .date {
+  font-size: 24px;
+  font-weight: 400;
+}
+#mediu-center .image-journals .image-journals-content .link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#mediu-center .image-journals .image-journals-content .link button {
+  border: none;
+  background-color: transparent;
+}
+#mediu-center .image-journals .image-journals-content .link button a {
+  color: #ED1A3B;
+  text-decoration: none;
+}
+#mediu-center .image-journals .image-journals-content .link .icon-journals {
+  display: flex;
+  align-items: center;
+}
+#mediu-center .image-journals .image-journals-content .link .icon-journals span {
+  display: inline-block;
+  margin-inline-end: 10px;
+  width: 30px;
+  height: 1px;
+  background-color: rgba(112, 112, 112, 0.3);
+}
+#mediu-center .swiper-slide-discussions {
+  box-shadow: 0px 0px 18px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 18px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 18px -7px rgba(0, 0, 0, 0.75);
+}
+#mediu-center .swiper-slide-discussions .discussions-content {
+  background-image: url("../../../assets/img/academics/Mask Group 48-2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 537px;
+  transition: 0.5s;
+}
+#mediu-center .swiper-slide-discussions:hover .discussions-content {
+  background-image: url("../../../assets/img/academics/Mask Group 48.svg");
+}
+#mediu-center .swiper-slide-discussions:hover .discussions-footer {
+  background-color: #FFDD00;
+}
+#mediu-center .swiper-slide-discussions .discussions-icon {
+  display: block;
+  text-align: end;
+  padding: 0 30px;
+}
+#mediu-center .swiper-slide-discussions .discussions-header {
+  padding: 70px 30px 0 30px;
+}
+#mediu-center .swiper-slide-discussions .discussions-header .num {
+  font-size: 36px;
+  font-weight: 400px;
+  margin-bottom: 0;
+  line-height: 28px;
+}
+#mediu-center .swiper-slide-discussions .discussions-header .date {
+  margin-bottom: 20px;
+}
+#mediu-center .swiper-slide-discussions .discussions-header .date p {
+  display: inline-block;
+}
+#mediu-center .swiper-slide-discussions .discussions-header .date .day {
+  position: relative;
+  margin-right: 5px;
+}
+#mediu-center .swiper-slide-discussions .discussions-header .date .day::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(112, 112, 112, 0.9);
+}
+#mediu-center .swiper-slide-discussions .discussions-header h5, #mediu-center .swiper-slide-discussions .discussions-header .h5 {
+  color: #ED1A3B;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#mediu-center .swiper-slide-discussions .discussions-header .des {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+#mediu-center .swiper-slide-discussions .discussions-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F3EFE5;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+#mediu-center .swiper-slide-discussions .discussions-footer .alarm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#mediu-center .swiper-slide-discussions .discussions-footer .alarm p {
+  margin-bottom: 0;
+}
+#mediu-center .swiper-slide-discussions .discussions-footer .alarm .from {
+  margin-right: 20px;
+}
+#mediu-center .swiper-slide-discussions .discussions-footer .alarm .address {
+  font-size: 14px;
+  font-weight: 400;
+}
+#mediu-center .swiper-slide-discussions .discussions-footer i {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
 #mediu-center .tabs {
   background-color: #FFDD00;
   padding: 19px 5px;
@@ -90660,6 +90813,42 @@ textarea.form-control-lg {
     height: 395px !important;
   }
 }
+@media (min-width: 1141px) and (max-width: 1480px) {
+  .swiper-journals {
+    height: 430px !important;
+  }
+  .swiper-slide-journals {
+    width: 300px !important;
+  }
+  .image-journals {
+    width: 300px;
+  }
+  .image-journals .image-journals-content .address {
+    font-size: 26px !important;
+  }
+  .image-journals .image-journals-content .date {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .image-journals .image-journals-content .address {
+    font-size: 20px !important;
+  }
+  .image-journals .image-journals-content .date {
+    font-size: 17px !important;
+  }
+}
+@media (max-width: 500px) {
+  .image-journals .image-journals-content .address {
+    font-size: 18px !important;
+  }
+  .image-journals .image-journals-content .date {
+    font-size: 15px !important;
+  }
+  .image-journals .image-journals-content a {
+    font-size: 13px;
+  }
+}
 @media (max-width: 1140px) {
   #mediu-center .container-fluid, #mediu-center .container-sm, #mediu-center .container-md, #mediu-center .container-lg, #mediu-center .container-xl, #mediu-center .container-xxl {
     padding-inline-start: 15px !important;
@@ -90756,6 +90945,77 @@ textarea.form-control-lg {
   }
   #mediu-center .image .year {
     font-size: 16px;
+  }
+}
+@media (min-width: 1278px) and (max-width: 1490px) {
+  .discussions-content {
+    height: 394px !important;
+  }
+  .discussions-content .discussions-header {
+    padding-top: 50px !important;
+  }
+  .discussions-content .discussions-header .num {
+    font-size: 33px !important;
+  }
+  .discussions-content .discussions-header h5, .discussions-content .discussions-header .h5 {
+    font-size: 20px !important;
+  }
+  .discussions-content .discussions-header .des {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 1141px) and (max-width: 1278px) {
+  .discussions-content {
+    height: 366px !important;
+  }
+  .discussions-content .discussions-header {
+    padding-top: 25px !important;
+  }
+  .discussions-content .discussions-header .num {
+    font-size: 30px !important;
+  }
+  .discussions-content .discussions-header h5, .discussions-content .discussions-header .h5 {
+    font-size: 18px !important;
+  }
+  .discussions-content .discussions-header .des {
+    font-size: 13px !important;
+  }
+}
+@media (min-width: 500px) and (max-width: 1140px) {
+  .discussions-content {
+    height: 490px !important;
+  }
+  .discussions-content .discussions-header {
+    padding-top: 60px !important;
+  }
+  .discussions-content .discussions-header .num {
+    font-size: 32px !important;
+  }
+  .discussions-content .discussions-header h5, .discussions-content .discussions-header .h5 {
+    font-size: 20px !important;
+  }
+  .discussions-content .discussions-header .des {
+    font-size: 15px !important;
+  }
+}
+@media (max-width: 500px) {
+  .discussions-content {
+    height: 490px !important;
+  }
+  .discussions-content .discussions-header {
+    padding-top: 60px !important;
+  }
+  .discussions-content .discussions-header .num {
+    font-size: 29px !important;
+  }
+  .discussions-content .discussions-header h5, .discussions-content .discussions-header .h5 {
+    font-size: 17px !important;
+  }
+  .discussions-content .discussions-header .des {
+    font-size: 12px !important;
+  }
+  .discussions-content .discussions-footer p {
+    font-size: 13px !important;
   }
 }
 /*!
