@@ -22,6 +22,7 @@
                justify-content: center;
                width: 50%;
                color: $font-white;
+               padding-inline-start: 30px;
 
                .titel-swiper {
                     font-size: 48px;
@@ -259,32 +260,38 @@
                cursor: pointer;
           }
 
-          .social-media {
-               padding-block-end: 50px;
 
-               &>div {
-                    width: 45px;
-                    height: 45px;
-                    @include flexCentar;
-                    margin-bottom: 12px;
+     }
+}
 
-                    i {
-                         font-size: 20px;
-                    }
-               }
+.social-media {
+     padding-block-end: 85px;
+     position: fixed;
+     bottom: 23%;
+     right: 10px;
+     z-index: 222222222222222222;
 
-               .youtube {
-                    color: #FF0000;
-               }
+     &>div {
+          width: 45px;
+          height: 45px;
+          @include flexCentar;
+          margin-bottom: 12px;
 
-               .twitter {
-                    color: #0090FF;
-               }
-
-               .facebook {
-                    color: #4458B6;
-               }
+          i {
+               font-size: 20px;
           }
+     }
+
+     .youtube {
+          color: #FF0000;
+     }
+
+     .twitter {
+          color: #0090FF;
+     }
+
+     .facebook {
+          color: #4458B6;
      }
 }
 

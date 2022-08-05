@@ -14,7 +14,6 @@ export let swiperHome = new Swiper( "#home .mySwiperHome", {
 
 export let swiperServices = new Swiper( ".mySwiperServices", {
      spaceBetween: 50,
-     effect: "fade",
      navigation: {
           nextEl: "#services .swiper-button.next",
           prevEl: "#services .swiper-button.prev",

@@ -10992,6 +10992,7 @@ textarea.form-control-lg {
   justify-content: center;
   width: 50%;
   color: #FFFFFF;
+  padding-inline-start: 30px;
 }
 #home .mySwiperHome .content-swiper .titel-swiper,
 #home .mySwiperHome3 .content-swiper .titel-swiper {
@@ -11227,10 +11228,15 @@ textarea.form-control-lg {
   align-items: center;
   cursor: pointer;
 }
-#home .icons-side .social-media {
-  padding-block-end: 50px;
+
+.social-media {
+  padding-block-end: 85px;
+  position: fixed;
+  bottom: 23%;
+  right: 10px;
+  z-index: 222222222222222240;
 }
-#home .icons-side .social-media > div {
+.social-media > div {
   width: 45px;
   height: 45px;
   display: flex;
@@ -11238,16 +11244,16 @@ textarea.form-control-lg {
   align-items: center;
   margin-bottom: 12px;
 }
-#home .icons-side .social-media > div i {
+.social-media > div i {
   font-size: 20px;
 }
-#home .icons-side .social-media .youtube {
+.social-media .youtube {
   color: #FF0000;
 }
-#home .icons-side .social-media .twitter {
+.social-media .twitter {
   color: #0090FF;
 }
-#home .icons-side .social-media .facebook {
+.social-media .facebook {
   color: #4458B6;
 }
 
@@ -12319,7 +12325,7 @@ footer .wrapper-two .copyright {
   overflow-x: hidden;
   direction: rtl;
   padding: 0;
-  margin-block-start: 50px;
+  margin-block-start: 70px;
 }
 #services .services-list li {
   position: relative;
@@ -12423,6 +12429,15 @@ footer .wrapper-two .copyright {
   border: 1px solid #999;
   color: #707070;
   background-color: #FFFFFF;
+}
+#services .title-statistics {
+  font-size: 32px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 72px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-inline-end: 45px;
 }
 #services .statistics-list {
   margin-inline-start: 50px;
@@ -12671,9 +12686,10 @@ footer .wrapper-two .copyright {
   }
   #services .col-md-3:last-child {
     width: 25%;
+    margin: 0 auto;
   }
   #services .col-md-6 {
-    width: 75%;
+    width: 72%;
   }
   #services .statistics-list li .statistics-tiltle {
     font-size: 15px;
@@ -12767,9 +12783,6 @@ footer .wrapper-two .copyright {
   #services .statistics-list {
     margin: 0 auto;
     width: 50%;
-  }
-  #services .statistics-list {
-    margin-top: 55px !important;
   }
   #services .statistics-list li .statistics-tiltle {
     font-size: 20px;

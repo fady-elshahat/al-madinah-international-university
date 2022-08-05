@@ -151,7 +151,7 @@
     overflow-x: hidden;
     direction: rtl;
     padding: 0;
-    margin-block-start: 50px;
+    margin-block-start: 70px;
 
     li {
       position: relative;
@@ -275,6 +275,17 @@
 
     }
   }
+
+  .title-statistics {
+    font-size: 32px;
+    color: $font-text;
+    font-weight: 500;
+    line-height: 72px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-inline-end: 45px;
+  }
+
 
   .statistics-list {
     margin-inline-start: 50px;
@@ -603,10 +614,11 @@
 
     .col-md-3:last-child {
       width: 25%;
+      margin: 0 auto;
     }
 
     .col-md-6 {
-      width: 75%;
+      width: 72%;
     }
 
     .statistics-list {
@@ -747,8 +759,6 @@
     }
 
     .statistics-list {
-      margin-top: 55px !important;
-
       li {
         .statistics-tiltle {
           font-size: 20px;
